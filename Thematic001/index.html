@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="alternate" href="/atom.xml" title="666DHG的博客" type="application/atom+xml">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-flash.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.4.2',
+    exturl: false,
+    sidebar: {"position":"left","display":"hide","offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":true,"style":"mac"},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: true,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: 'Copy',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
+    },
+    sidebarPadding: 40
+  };
+</script>
+  <meta name="description" content="Thematic001 更多细节请到 「Prove001」 中查看">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Thematic001. 数论专题">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;Thematic001&#x2F;index.html">
+<meta property="og:site_name" content="666DHG的博客">
+<meta property="og:description" content="Thematic001 更多细节请到 「Prove001」 中查看">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2020-02-23T07:25:34.160Z">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/Thematic001/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>Thematic001. 数论专题 | 666DHG的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">666DHG的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">20186gdoi13</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-data">
+
+    <a href="/data/" rel="section"><i class="fa fa-fw fa-cloud"></i>Data</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="Searching..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/Thematic001/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/data/Avatar/LKS_ZhuGeliang.jpg">
+      <meta itemprop="name" content="杨钧">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="666DHG的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Thematic001. 数论专题
+        </h1>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-01-17 20:05:20" itemprop="dateCreated datePublished" datetime="2020-01-17T20:05:20+08:00">2020-01-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-02-23 15:25:34" itemprop="dateModified" datetime="2020-02-23T15:25:34+08:00">2020-02-23</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Thematic/" itemprop="url" rel="index">
+                    <span itemprop="name">Thematic</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/Thematic001/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Thematic001/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>6.9k</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>6 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="Thematic001"><a href="#Thematic001" class="headerlink" title="Thematic001"></a>Thematic001</h1><blockquote>
+<p>更多细节请到 「<a href="\Prove001">Prove001</a>」 中查看</p>
+</blockquote>
+<a id="more"></a>
+<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><ul>
+<li><a href="/Thematic001/#素数">素数</a></li>
+<li><a href="/Thematic001/#欧拉函数">欧拉函数</a></li>
+<li><a href="/Thematic001/#约数">约数</a></li>
+<li><a href="/Thematic001/#乘法逆元">乘法逆元</a></li>
+<li><a href="/Thematic001/#欧几里得（拓展）">欧几里得（拓展）</a></li>
+<li><a href="/Thematic001/#中国剩余定理">中国剩余定理</a></li>
+<li><a href="/Thematic001/#中国剩余定理（拓展）">中国剩余定理（拓展）</a></li>
+<li><a href="/Thematic001/#BSGS">BSGS</a></li>
+<li><a href="/Thematic001/#BSGS（拓展）">BSGS（拓展）</a></li>
+</ul>
+<hr>
+<h1 id="素数"><a href="#素数" class="headerlink" title="素数"></a>素数</h1><h2 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h2><ul>
+<li><h3 id="LuoguP3383"><a href="#LuoguP3383" class="headerlink" title="LuoguP3383"></a><a href="https://www.luogu.com.cn/problem/P3383" target="_blank" rel="noopener">LuoguP3383</a></h3></li>
+</ul>
+<h2 id="暴力-（-O-n-sqrt-n-）"><a href="#暴力-（-O-n-sqrt-n-）" class="headerlink" title="暴力 （$O(n\sqrt{n})$）"></a>暴力 （$O(n\sqrt{n})$）</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">bool</span> Prime[MAXN];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Check</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="keyword">if</span> (i&lt;<span class="number">2</span>) <span class="keyword">continue</span>;</span><br><span class="line">        <span class="keyword">if</span> (i==<span class="number">2</span>||i==<span class="number">3</span>)</span><br><span class="line">          &#123;</span><br><span class="line">            Prime[i]=<span class="literal">true</span>;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">          &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">2</span>;j&lt;=<span class="built_in">ceil</span>(<span class="built_in">sqrt</span>(i));j++) <span class="keyword">if</span> (i%j==<span class="number">0</span>)</span><br><span class="line">          &#123;</span><br><span class="line">            Prime[i]=<span class="literal">true</span>;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">          &#125;</span><br><span class="line">        Prime[i]=!Prime[i];</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="埃式筛法-（-O-n-log-n-）"><a href="#埃式筛法-（-O-n-log-n-）" class="headerlink" title="埃式筛法 （$O(n\log n)$）"></a>埃式筛法 （$O(n\log n)$）</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">bool</span> vis[MAXN];</span><br><span class="line"><span class="keyword">int</span> size,prime[MAXN];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">FindPrime</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    vis[<span class="number">0</span>]=vis[<span class="number">1</span>]=<span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++) <span class="keyword">if</span> (!vis[i])</span><br><span class="line">      &#123;</span><br><span class="line">        prime[++size]=i;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">2</span>;i*j&lt;=n;j++) vis[i*j]=<span class="literal">true</span>;</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="欧拉筛法-（-O-n-）"><a href="#欧拉筛法-（-O-n-）" class="headerlink" title="欧拉筛法 （$O(n)$）"></a>欧拉筛法 （$O(n)$）</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">bool</span> vis[MAXN];</span><br><span class="line"><span class="keyword">int</span> size,prime[MAXN];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">FindPrime</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    vis[<span class="number">0</span>]=vis[<span class="number">1</span>]=<span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="keyword">if</span> (!vis[i]) prime[++size]=i;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=size&amp;&amp;i*prime[j]&lt;=n;j++)</span><br><span class="line">          &#123;</span><br><span class="line">            vis[i*prime[j]]=<span class="literal">true</span>;</span><br><span class="line">            <span class="keyword">if</span> (i%prime[j]==<span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="欧拉函数"><a href="#欧拉函数" class="headerlink" title="欧拉函数"></a>欧拉函数</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>$\varphi$($x$) 表示求在 $1 $ 到 $ x$ 的整数中有多少个数与 $x$ 互质</p>
+<h2 id="直接求-varphi-n-（-O-sqrt-n-）"><a href="#直接求-varphi-n-（-O-sqrt-n-）" class="headerlink" title="直接求 $\varphi$ ($n$) （$O(\sqrt{n})$）"></a>直接求 $\varphi$ ($n$) （$O(\sqrt{n})$）</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">FindPhi</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> ans=n;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">2</span>;i*i&lt;=n;i++)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="keyword">if</span> (n%i==<span class="number">0</span>)</span><br><span class="line">          &#123;</span><br><span class="line">            ans-=ans/i;</span><br><span class="line">            <span class="keyword">while</span> (n%i==<span class="number">0</span>) n/=i;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    <span class="keyword">if</span> (n&gt;<span class="number">1</span>) ans-=ans/n;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="同时求-varphi-1-到-varphi-n-时与-1-到-n-的素数-（-O-n-）"><a href="#同时求-varphi-1-到-varphi-n-时与-1-到-n-的素数-（-O-n-）" class="headerlink" title="同时求 $\varphi$ ($1$) 到  $\varphi$ ($n$)时与 $1$ 到 $n$ 的素数 （$O(n)$）"></a>同时求 $\varphi$ ($1$) 到  $\varphi$ ($n$)时与 $1$ 到 $n$ 的素数 （$O(n)$）</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">bool</span> vis[MAXN];</span><br><span class="line"><span class="keyword">int</span> size,Prime[MAXN],Phi[MAXN];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Find_Phi_and_Prime</span><span class="params">(<span class="keyword">int</span> n)</span>  </span></span><br><span class="line"><span class="function">  </span>&#123;  </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;n;i++)  </span><br><span class="line">      &#123;  </span><br><span class="line">        <span class="keyword">if</span> (!vis[i])  </span><br><span class="line">          &#123;  </span><br><span class="line">            Prime[++size]=i;  </span><br><span class="line">            Phi[i]=i<span class="number">-1</span>;  </span><br><span class="line">          &#125;  </span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=size&amp;&amp;i*Prime[j]&lt;n;j++)  </span><br><span class="line">          &#123;  </span><br><span class="line">            vis[i*Prime[j]]=<span class="literal">true</span>;  </span><br><span class="line">            <span class="keyword">if</span> (i%Prime[j]==<span class="number">0</span>)  </span><br><span class="line">              &#123;  </span><br><span class="line">                Phi[i*Prime[j]]=Phi[i]*Prime[j];  </span><br><span class="line">                <span class="keyword">break</span>;  </span><br><span class="line">              &#125;  </span><br><span class="line">            <span class="keyword">else</span> Phi[i*Prime[j]]=Phi[i]*(Prime[j]<span class="number">-1</span>);</span><br><span class="line">          &#125;  </span><br><span class="line">      &#125;  </span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="约数"><a href="#约数" class="headerlink" title="约数"></a>约数</h1><h2 id="例题-1"><a href="#例题-1" class="headerlink" title="例题"></a>例题</h2><ul>
+<li><h3 id="Loj10205（大数据）"><a href="#Loj10205（大数据）" class="headerlink" title="Loj10205（大数据）"></a><a href="https://loj.ac/problem/10205" target="_blank" rel="noopener">Loj10205（大数据）</a></h3></li>
+<li><h3 id="LuoguP2152（超大数据）"><a href="#LuoguP2152（超大数据）" class="headerlink" title="LuoguP2152（超大数据）"></a><a href="https://www.luogu.com.cn/problem/P2152" target="_blank" rel="noopener">LuoguP2152（超大数据）</a></h3></li>
+</ul>
+<h2 id="辗转相除法"><a href="#辗转相除法" class="headerlink" title="辗转相除法"></a>辗转相除法</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">GCD</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (b==<span class="number">0</span>) <span class="keyword">return</span> a;</span><br><span class="line">    <span class="keyword">return</span> GCD(b,a%b);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="二进制算法"><a href="#二进制算法" class="headerlink" title="二进制算法"></a>二进制算法</h2><ul>
+<li><h3 id="低精"><a href="#低精" class="headerlink" title="低精"></a>低精</h3></li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">GCD</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i,j;</span><br><span class="line">    <span class="keyword">if</span> (x==<span class="number">0</span>) <span class="keyword">return</span> y;</span><br><span class="line">    <span class="keyword">if</span> (y==<span class="number">0</span>) <span class="keyword">return</span> x;</span><br><span class="line">    <span class="keyword">for</span> (i=<span class="number">0</span>;(x&amp;<span class="number">1</span>)==<span class="number">0</span>;i++) x&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (j=<span class="number">0</span>;(y&amp;<span class="number">1</span>)==<span class="number">0</span>;j++) y&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span> (j&lt;i) i=j;</span><br><span class="line">    <span class="keyword">while</span> (<span class="number">1</span>)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="keyword">if</span> (x&lt;y) x^=y,y^=x,x^=y;</span><br><span class="line">        <span class="keyword">if</span> ((x-=y)==<span class="number">0</span>) <span class="keyword">return</span> y&lt;&lt;i;</span><br><span class="line">        <span class="keyword">while</span> ((x&amp;<span class="number">1</span>)==<span class="number">0</span>) x&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><h3 id="高精"><a href="#高精" class="headerlink" title="高精"></a>高精</h3></li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Data</span></span></span><br><span class="line"><span class="class">  &#123;</span></span><br><span class="line">    <span class="keyword">int</span> a[<span class="number">2005</span>];</span><br><span class="line">    <span class="keyword">int</span> num;</span><br><span class="line">  &#125;;</span><br><span class="line"><span class="keyword">char</span> c[<span class="number">10005</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">div2</span><span class="params">(Data &amp;x)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (x.a[x.num]==<span class="number">1</span>)</span><br><span class="line">      &#123;</span><br><span class="line">        x.a[x.num<span class="number">-1</span>]+=<span class="number">10000000</span>;</span><br><span class="line">        x.num--;</span><br><span class="line">      &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=x.num;i&gt;=<span class="number">1</span>;i--)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="keyword">if</span> (x.a[i]&amp;<span class="number">1</span>) x.a[i<span class="number">-1</span>]+=<span class="number">10000000</span>;</span><br><span class="line">        x.a[i]&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">plus2</span><span class="params">(Data &amp;x)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=x.num;i++) x.a[i]&lt;&lt;=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;x.num;i++)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="keyword">if</span> (x.a[i]&gt;=<span class="number">10000000</span>)</span><br><span class="line">          &#123;</span><br><span class="line">            x.a[i]-=<span class="number">10000000</span>;</span><br><span class="line">            x.a[i+<span class="number">1</span>]++;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    <span class="keyword">if</span> (x.a[x.num]&gt;=<span class="number">10000000</span>)</span><br><span class="line">      &#123;</span><br><span class="line">        x.a[x.num]-=<span class="number">10000000</span>;</span><br><span class="line">        x.a[x.num+<span class="number">1</span>]=<span class="number">1</span>;</span><br><span class="line">        x.num++;</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">sub</span><span class="params">(Data &amp;x,Data y)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=y.num;i++) x.a[i]-=y.a[i];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;x.num;i++)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="keyword">if</span> (x.a[i]&lt;<span class="number">0</span>)</span><br><span class="line">          &#123;</span><br><span class="line">            x.a[i+<span class="number">1</span>]--;</span><br><span class="line">            x.a[i]+=<span class="number">10000000</span>;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    <span class="keyword">if</span> (x.a[x.num]==<span class="number">0</span>) x.num--;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">comp</span><span class="params">(Data &amp;x,Data &amp;y)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (x.num&gt;y.num) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">if</span> (x.num&lt;y.num)</span><br><span class="line">      &#123;</span><br><span class="line">        swap(x.num,y.num);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=max(x.num,y.num);i++) swap(x.a[i],y.a[i]);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=x.num;i&gt;=<span class="number">1</span>;i--)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="keyword">if</span> (x.a[i]&gt;y.a[i]) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">if</span> (x.a[i]&lt;y.a[i])</span><br><span class="line">          &#123;</span><br><span class="line">            swap(x.num,y.num);</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=max(x.num,y.num);i++) swap(x.a[i],y.a[i]);</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    Data n,m;</span><br><span class="line">    <span class="keyword">int</span> stop,x,y,t,cnt;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%s"</span>,c);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="built_in">strlen</span>(c)<span class="number">-1</span>;i&gt;=<span class="number">0</span>;i-=<span class="number">7</span>)</span><br><span class="line">      &#123;</span><br><span class="line">        n.num++;</span><br><span class="line">        n.a[n.num]=<span class="number">0</span>;</span><br><span class="line">        stop=max(i<span class="number">-6</span>,<span class="number">0</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j=i;j&gt;=stop;j--) n.a[n.num]+=(c[j]-<span class="string">'0'</span>)*<span class="built_in">pow</span>(<span class="number">10</span>,i-j);</span><br><span class="line">      &#125;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%s"</span>,c);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="built_in">strlen</span>(c)<span class="number">-1</span>;i&gt;=<span class="number">0</span>;i-=<span class="number">7</span>)</span><br><span class="line">      &#123;</span><br><span class="line">        m.num++;</span><br><span class="line">        m.a[m.num]=<span class="number">0</span>;</span><br><span class="line">        stop=max(i<span class="number">-6</span>,<span class="number">0</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j=i;j&gt;=stop;j--) m.a[m.num]+=(c[j]-<span class="string">'0'</span>)*<span class="built_in">pow</span>(<span class="number">10</span>,i-j);</span><br><span class="line">      &#125;</span><br><span class="line">    <span class="keyword">for</span> (x=<span class="number">0</span>;!(n.a[<span class="number">1</span>]&amp;<span class="number">1</span>);x++) div2(n);</span><br><span class="line">    <span class="keyword">for</span> (y=<span class="number">0</span>;!(m.a[<span class="number">1</span>]&amp;<span class="number">1</span>);y++) div2(m);</span><br><span class="line">    <span class="keyword">if</span> (y&lt;x) x=y;</span><br><span class="line">    <span class="keyword">while</span> (<span class="number">1</span>)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="keyword">if</span> (comp(n,m)) </span><br><span class="line">          &#123;</span><br><span class="line">            <span class="keyword">while</span>(x--) plus2(n);</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"%d"</span>,n.a[n.num]);</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i=n.num<span class="number">-1</span>;i&gt;=<span class="number">1</span>;i--)</span><br><span class="line">              &#123;</span><br><span class="line">                t=n.a[i];</span><br><span class="line">                cnt=<span class="number">0</span>;</span><br><span class="line">                <span class="keyword">while</span> (t/<span class="number">10</span>) t/=<span class="number">10</span>,cnt++;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;<span class="number">7</span>-cnt;i++) <span class="built_in">printf</span>(<span class="string">"0"</span>);</span><br><span class="line">                <span class="built_in">printf</span>(<span class="string">"%d"</span>,n.a[i]);</span><br><span class="line">              &#125;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">          &#125;</span><br><span class="line">        sub(n,m);</span><br><span class="line">        <span class="keyword">while</span> (!(n.a[<span class="number">1</span>]&amp;<span class="number">1</span>)) div2(n);</span><br><span class="line">      &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="乘法逆元"><a href="#乘法逆元" class="headerlink" title="乘法逆元"></a>乘法逆元</h1><h2 id="解决的问题"><a href="#解决的问题" class="headerlink" title="解决的问题"></a>解决的问题</h2><p>求下面关于 $x$ 的同余方程的整数解</p>
+<script type="math/tex; mode=display">\large ax\equiv 1 \pmod b</script><h2 id="例题-2"><a href="#例题-2" class="headerlink" title="例题"></a>例题</h2><ul>
+<li><h3 id="LuoguP3383-1"><a href="#LuoguP3383-1" class="headerlink" title="LuoguP3383"></a><a href="https://www.luogu.com.cn/problem/P3383" target="_blank" rel="noopener">LuoguP3383</a></h3></li>
+</ul>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><ul>
+<li><h3 id="欧几里得（拓展）"><a href="#欧几里得（拓展）" class="headerlink" title="欧几里得（拓展）"></a>欧几里得（拓展）</h3></li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">long</span> <span class="keyword">long</span> <span class="title">exgcd</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> a,<span class="keyword">long</span> <span class="keyword">long</span> b,<span class="keyword">long</span> <span class="keyword">long</span> &amp;x,<span class="keyword">long</span> <span class="keyword">long</span> &amp;y)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (b==<span class="number">0</span>)</span><br><span class="line">      &#123;</span><br><span class="line">        x=<span class="number">1</span>,y=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">return</span> a;</span><br><span class="line">      &#125;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> r=exgcd(b,a%b,x,y);</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> t=x;</span><br><span class="line">    x=y;</span><br><span class="line">    y=t-(a/b)*y;</span><br><span class="line">    <span class="keyword">return</span> r;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><h3 id="快速幂"><a href="#快速幂" class="headerlink" title="快速幂"></a>快速幂</h3></li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">long</span> <span class="keyword">long</span> <span class="title">fastpow</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> a,<span class="keyword">long</span> <span class="keyword">long</span> b,<span class="keyword">long</span> <span class="keyword">long</span> p)</span> <span class="comment">//a^b%p</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (b==<span class="number">0</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span> (b==<span class="number">1</span>) <span class="keyword">return</span> a%p;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> half=fastpow(a,b/<span class="number">2</span>,p);</span><br><span class="line">    <span class="keyword">if</span> (b&amp;<span class="number">1</span>) <span class="keyword">return</span> ((half%p*half%p)%p*a)%p;</span><br><span class="line">    <span class="keyword">return</span> (half%p*half%p)%p;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> x=fastpow(a,b<span class="number">-2</span>,b);</span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><h3 id="线性算法求-1-到-n-模-b-的逆元-（-O-n-）"><a href="#线性算法求-1-到-n-模-b-的逆元-（-O-n-）" class="headerlink" title="线性算法求 $1$ 到 $n$ 模 $b$ 的逆元 （$O(n)$）"></a>线性算法求 $1$ 到 $n$ 模 $b$ 的逆元 （$O(n)$）</h3></li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">inv[<span class="number">1</span>]=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)</span><br><span class="line">    inv[i]=(p-p/i)*inv[p%i]%p;</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="欧几里得（拓展）-1"><a href="#欧几里得（拓展）-1" class="headerlink" title="欧几里得（拓展）"></a>欧几里得（拓展）</h1><h2 id="解决的问题-1"><a href="#解决的问题-1" class="headerlink" title="解决的问题"></a>解决的问题</h2><p>求下面关于 $x,y$ 的不定方程的整数解</p>
+<script type="math/tex; mode=display">\large{ax+by=c}</script><h2 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">long</span> <span class="keyword">long</span> <span class="title">exGCD</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> a,<span class="keyword">long</span> <span class="keyword">long</span> b,<span class="keyword">long</span> <span class="keyword">long</span> &amp;x,<span class="keyword">long</span> <span class="keyword">long</span> &amp;y)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (b==<span class="number">0</span>)</span><br><span class="line">      &#123;</span><br><span class="line">        x=<span class="number">1</span>,y=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">return</span> a;</span><br><span class="line">      &#125;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> r=exGCD(b,a%b,x,y);</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> t=x;</span><br><span class="line">    x=y;</span><br><span class="line">    y=t-(a/b)*y;</span><br><span class="line">    <span class="keyword">return</span> r;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="中国剩余定理"><a href="#中国剩余定理" class="headerlink" title="中国剩余定理"></a>中国剩余定理</h1><h2 id="解决的问题-2"><a href="#解决的问题-2" class="headerlink" title="解决的问题"></a>解决的问题</h2><p>已知关于 $x$ 的同余方程组</p>
+<script type="math/tex; mode=display">\large\begin{cases}
+x\equiv b_{1} \pmod m_{1}\\
+x\equiv b_{2} \pmod m_{2}\\
+\cdots\\
+x\equiv b_{k} \pmod m_{k}\\
+\end{cases}</script><p>并且</p>
+<script type="math/tex; mode=display">\large \gcd(m_{1},m_{}2,\cdots,m_{k})=1</script><p>求整数解 $x$ </p>
+<h2 id="例题-3"><a href="#例题-3" class="headerlink" title="例题"></a>例题</h2><ul>
+<li><h3 id="LuoguP1495"><a href="#LuoguP1495" class="headerlink" title="LuoguP1495"></a><a href="https://www.luogu.com.cn/problem/P1495" target="_blank" rel="noopener">LuoguP1495</a></h3></li>
+</ul>
+<h2 id="代码-2"><a href="#代码-2" class="headerlink" title="代码"></a>代码</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">long</span> <span class="keyword">long</span> <span class="title">CRT</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> M=<span class="number">1</span>,ans=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) M*=m[i];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="keyword">long</span> <span class="keyword">long</span> tM=M/m[i];</span><br><span class="line">        <span class="keyword">long</span> <span class="keyword">long</span> x,y;</span><br><span class="line">        exgcd(tM,m[i],x,y);</span><br><span class="line">        ans=(ans+tM*x*a[i])%M;</span><br><span class="line">      &#125;</span><br><span class="line">    <span class="keyword">return</span> (ans+M)%M;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="中国剩余定理（拓展）"><a href="#中国剩余定理（拓展）" class="headerlink" title="中国剩余定理（拓展）"></a>中国剩余定理（拓展）</h1><h2 id="解决的问题-3"><a href="#解决的问题-3" class="headerlink" title="解决的问题"></a>解决的问题</h2><p>已知关于 $x$ 的同余方程组</p>
+<script type="math/tex; mode=display">\large\begin{cases}
+x\equiv b_{1} \pmod m_{1}\\
+x\equiv b_{2} \pmod m_{2}\\
+\cdots\\
+x\equiv b_{k} \pmod m_{k}\\
+\end{cases}</script><p>并且</p>
+<script type="math/tex; mode=display">\large \gcd(m_{1},m_{}2,\cdots,m_{n})>1</script><p>求整数解 $x$ </p>
+<h2 id="例题-4"><a href="#例题-4" class="headerlink" title="例题"></a>例题</h2><ul>
+<li><h3 id="LuoguP4777"><a href="#LuoguP4777" class="headerlink" title="LuoguP4777"></a><a href="https://www.luogu.com.cn/problem/P4777" target="_blank" rel="noopener">LuoguP4777</a></h3></li>
+</ul>
+<h2 id="代码-3"><a href="#代码-3" class="headerlink" title="代码"></a>代码</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">long</span> <span class="keyword">long</span> <span class="title">exCRT</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> M=m[<span class="number">1</span>],ans=b[<span class="number">1</span>],x,y,g,t,k1;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)</span><br><span class="line">      &#123;</span><br><span class="line">        g=exgcd(M,m[i],x,y);</span><br><span class="line">        <span class="keyword">if</span> ((b[i]-ans)%g) <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        k1=x*(b[i]-ans)/g;</span><br><span class="line">        t=m[i]/g;</span><br><span class="line">        x=(k1%t+t)%t;</span><br><span class="line">        ans=M*x+ans;</span><br><span class="line">        M=M/g*m[i];</span><br><span class="line">      &#125;</span><br><span class="line">    <span class="keyword">return</span> (ans%M+M)%M;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="BSGS"><a href="#BSGS" class="headerlink" title="BSGS"></a>BSGS</h1><h2 id="解决的问题-4"><a href="#解决的问题-4" class="headerlink" title="解决的问题"></a>解决的问题</h2><p>已知关于 $x$ 的方程</p>
+<script type="math/tex; mode=display">\large a^{x}\equiv b\text{ }(\text{ }mod\text{ }p\text{ })</script><p>并且</p>
+<script type="math/tex; mode=display">\large gcd(a,p)=1</script><p>已知 $a,b,p$，求整数 $x$</p>
+<h2 id="例题-5"><a href="#例题-5" class="headerlink" title="例题"></a>例题</h2><ul>
+<li><h3 id="LuoguP3846"><a href="#LuoguP3846" class="headerlink" title="LuoguP3846"></a><a href="https://www.luogu.com.cn/problem/P3846" target="_blank" rel="noopener">LuoguP3846</a></h3></li>
+<li><h3 id="LuoguP2485"><a href="#LuoguP2485" class="headerlink" title="LuoguP2485"></a><a href="https://www.luogu.com.cn/problem/P2485" target="_blank" rel="noopener">LuoguP2485</a></h3></li>
+</ul>
+<h2 id="代码-4"><a href="#代码-4" class="headerlink" title="代码"></a>代码</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">long</span> <span class="keyword">long</span> <span class="title">BSGS</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> a,<span class="keyword">long</span> <span class="keyword">long</span> b,<span class="keyword">long</span> <span class="keyword">long</span> p)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    a%=p,b%=p;</span><br><span class="line">    <span class="keyword">if</span> (a==<span class="number">0</span>)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="keyword">if</span> (b==<span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    <span class="built_in">map</span> &lt;<span class="keyword">long</span> <span class="keyword">long</span>,<span class="keyword">long</span> <span class="keyword">long</span>&gt; M;</span><br><span class="line">    M.clear();</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> temp=b,m=<span class="built_in">ceil</span>(<span class="built_in">sqrt</span>(p));</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;=m;i++,temp=temp*a%p) M[temp]=i;</span><br><span class="line">    temp=a=fastpow(a,m,p);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++,temp=temp*a%p) <span class="keyword">if</span> (M.count(temp)) <span class="keyword">return</span> i*m-M[temp];</span><br><span class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="BSGS（拓展）"><a href="#BSGS（拓展）" class="headerlink" title="BSGS（拓展）"></a>BSGS（拓展）</h1><h2 id="解决的问题-5"><a href="#解决的问题-5" class="headerlink" title="解决的问题"></a>解决的问题</h2><p>已知关于 $x$ 的方程</p>
+<script type="math/tex; mode=display">\large a^{x}\equiv b\text{ }(\text{ }mod\text{ }p\text{ })</script><p>并且</p>
+<script type="math/tex; mode=display">\large gcd(a,p)>1</script><p>已知 $a,b,p$，求整数 $x$</p>
+<h2 id="例题-6"><a href="#例题-6" class="headerlink" title="例题"></a>例题</h2><ul>
+<li><h3 id="LuoguP4195"><a href="#LuoguP4195" class="headerlink" title="LuoguP4195"></a><a href="https://www.luogu.com.cn/problem/P4195" target="_blank" rel="noopener">LuoguP4195</a></h3></li>
+</ul>
+<h2 id="代码-5"><a href="#代码-5" class="headerlink" title="代码"></a>代码</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">long</span> <span class="keyword">long</span> <span class="title">inv</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> a,<span class="keyword">long</span> <span class="keyword">long</span> p)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> x,y,ans;</span><br><span class="line">    exgcd(a,p,x,y);</span><br><span class="line">    <span class="keyword">return</span> (x%p+p)%p;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">long</span> <span class="keyword">long</span> <span class="title">exBSGS</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> a,<span class="keyword">long</span> <span class="keyword">long</span> b,<span class="keyword">long</span> <span class="keyword">long</span> p)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (b==<span class="number">1</span>||p==<span class="number">1</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> x,y,g,k=<span class="number">0</span>,na=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span> (g=exgcd(a,p,x,y))</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="keyword">if</span> (g==<span class="number">1</span>) <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">if</span> (b%g) <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        k++;</span><br><span class="line">        b/=g;</span><br><span class="line">        p/=g;</span><br><span class="line">        na=na*(a/g)%p;</span><br><span class="line">        <span class="keyword">if</span> (na==b) <span class="keyword">return</span> k;</span><br><span class="line">      &#125;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> ans=BSGS(a,b*inv(na,p)%p,p);</span><br><span class="line">    <span class="keyword">if</span> (ans==<span class="number">-1</span>) <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">return</span> ans+k;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/Template006/" rel="next" title="Template006. 最近公共祖先（LCA）模板">
+                  <i class="fa fa-chevron-left"></i> Template006. 最近公共祖先（LCA）模板
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+                <a href="/Prove001/" rel="prev" title="Prove001">
+                  Prove001 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    <div class="comments" id="comments"></div>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Thematic001"><span class="nav-number">1.</span> <span class="nav-text">Thematic001</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#目录"><span class="nav-number">2.</span> <span class="nav-text">目录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#素数"><span class="nav-number">3.</span> <span class="nav-text">素数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#例题"><span class="nav-number">3.1.</span> <span class="nav-text">例题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#LuoguP3383"><span class="nav-number">3.1.1.</span> <span class="nav-text">LuoguP3383</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#暴力-（-O-n-sqrt-n-）"><span class="nav-number">3.2.</span> <span class="nav-text">暴力 （$O(n\sqrt{n})$）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#埃式筛法-（-O-n-log-n-）"><span class="nav-number">3.3.</span> <span class="nav-text">埃式筛法 （$O(n\log n)$）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#欧拉筛法-（-O-n-）"><span class="nav-number">3.4.</span> <span class="nav-text">欧拉筛法 （$O(n)$）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#欧拉函数"><span class="nav-number">4.</span> <span class="nav-text">欧拉函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义"><span class="nav-number">4.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#直接求-varphi-n-（-O-sqrt-n-）"><span class="nav-number">4.2.</span> <span class="nav-text">直接求 $\varphi$ ($n$) （$O(\sqrt{n})$）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#同时求-varphi-1-到-varphi-n-时与-1-到-n-的素数-（-O-n-）"><span class="nav-number">4.3.</span> <span class="nav-text">同时求 $\varphi$ ($1$) 到  $\varphi$ ($n$)时与 $1$ 到 $n$ 的素数 （$O(n)$）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#约数"><span class="nav-number">5.</span> <span class="nav-text">约数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#例题-1"><span class="nav-number">5.1.</span> <span class="nav-text">例题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Loj10205（大数据）"><span class="nav-number">5.1.1.</span> <span class="nav-text">Loj10205（大数据）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LuoguP2152（超大数据）"><span class="nav-number">5.1.2.</span> <span class="nav-text">LuoguP2152（超大数据）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#辗转相除法"><span class="nav-number">5.2.</span> <span class="nav-text">辗转相除法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二进制算法"><span class="nav-number">5.3.</span> <span class="nav-text">二进制算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#低精"><span class="nav-number">5.3.1.</span> <span class="nav-text">低精</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高精"><span class="nav-number">5.3.2.</span> <span class="nav-text">高精</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#乘法逆元"><span class="nav-number">6.</span> <span class="nav-text">乘法逆元</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解决的问题"><span class="nav-number">6.1.</span> <span class="nav-text">解决的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#例题-2"><span class="nav-number">6.2.</span> <span class="nav-text">例题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#LuoguP3383-1"><span class="nav-number">6.2.1.</span> <span class="nav-text">LuoguP3383</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">6.3.</span> <span class="nav-text">代码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#欧几里得（拓展）"><span class="nav-number">6.3.1.</span> <span class="nav-text">欧几里得（拓展）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快速幂"><span class="nav-number">6.3.2.</span> <span class="nav-text">快速幂</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线性算法求-1-到-n-模-b-的逆元-（-O-n-）"><span class="nav-number">6.3.3.</span> <span class="nav-text">线性算法求 $1$ 到 $n$ 模 $b$ 的逆元 （$O(n)$）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#欧几里得（拓展）-1"><span class="nav-number">7.</span> <span class="nav-text">欧几里得（拓展）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解决的问题-1"><span class="nav-number">7.1.</span> <span class="nav-text">解决的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码-1"><span class="nav-number">7.2.</span> <span class="nav-text">代码</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#中国剩余定理"><span class="nav-number">8.</span> <span class="nav-text">中国剩余定理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解决的问题-2"><span class="nav-number">8.1.</span> <span class="nav-text">解决的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#例题-3"><span class="nav-number">8.2.</span> <span class="nav-text">例题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#LuoguP1495"><span class="nav-number">8.2.1.</span> <span class="nav-text">LuoguP1495</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码-2"><span class="nav-number">8.3.</span> <span class="nav-text">代码</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#中国剩余定理（拓展）"><span class="nav-number">9.</span> <span class="nav-text">中国剩余定理（拓展）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解决的问题-3"><span class="nav-number">9.1.</span> <span class="nav-text">解决的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#例题-4"><span class="nav-number">9.2.</span> <span class="nav-text">例题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#LuoguP4777"><span class="nav-number">9.2.1.</span> <span class="nav-text">LuoguP4777</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码-3"><span class="nav-number">9.3.</span> <span class="nav-text">代码</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#BSGS"><span class="nav-number">10.</span> <span class="nav-text">BSGS</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解决的问题-4"><span class="nav-number">10.1.</span> <span class="nav-text">解决的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#例题-5"><span class="nav-number">10.2.</span> <span class="nav-text">例题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#LuoguP3846"><span class="nav-number">10.2.1.</span> <span class="nav-text">LuoguP3846</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LuoguP2485"><span class="nav-number">10.2.2.</span> <span class="nav-text">LuoguP2485</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码-4"><span class="nav-number">10.3.</span> <span class="nav-text">代码</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#BSGS（拓展）"><span class="nav-number">11.</span> <span class="nav-text">BSGS（拓展）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解决的问题-5"><span class="nav-number">11.1.</span> <span class="nav-text">解决的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#例题-6"><span class="nav-number">11.2.</span> <span class="nav-text">例题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#LuoguP4195"><span class="nav-number">11.2.1.</span> <span class="nav-text">LuoguP4195</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码-5"><span class="nav-number">11.3.</span> <span class="nav-text">代码</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="site-author-image" itemprop="image" alt="杨钧"
+    src="/data/Avatar/LKS_ZhuGeliang.jpg">
+  <p class="site-author-name" itemprop="name">杨钧</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/666DHG" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;666DHG" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:1265448316@qq.com" title="E-Mail &amp;rarr; mailto:1265448316@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://www.luogu.org/" title="https:&#x2F;&#x2F;www.luogu.org&#x2F;" rel="noopener" target="_blank">Luogu</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://syzoj.com/" title="https:&#x2F;&#x2F;syzoj.com&#x2F;" rel="noopener" target="_blank">SYZOJ</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://loj.ac/" title="https:&#x2F;&#x2F;loj.ac&#x2F;" rel="noopener" target="_blank">LibreOJ</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://www.lydsy.com/JudgeOnline/" title="https:&#x2F;&#x2F;www.lydsy.com&#x2F;JudgeOnline&#x2F;" rel="noopener" target="_blank">BZOJ</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://poj.org/" title="http:&#x2F;&#x2F;poj.org&#x2F;" rel="noopener" target="_blank">POJ</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://noi.ac/" title="http:&#x2F;&#x2F;noi.ac&#x2F;" rel="noopener" target="_blank">NOIOJ</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://github.com/" title="https:&#x2F;&#x2F;github.com&#x2F;" rel="noopener" target="_blank">Github</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">杨钧</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="Symbols count total">68k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="Reading time total">1:02</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.0.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.4.2
+  </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/pisces.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+  <script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+<script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script>
+
+    
+
+  
+
+
+<script>
+NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(item => {
+    return GUEST.includes(item);
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'MbYJUXsMbHJLM8OACqy55MoX-gzGzoHsz',
+    appKey: 've7fNI4TTJtW21HzcQ6d4j4H',
+    placeholder: "Just go go",
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: 'zh-cn' || 'zh-cn',
+    path: location.pathname,
+    recordIP: false,
+    serverURLs: ''
+  });
+}, window.Valine);
+</script>
+</body>
+<div id="tp-weather-widget"></div>
+  <script>
+    (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
+    window.SeniverseWeatherWidget('show', {
+      flavor: "bubble",
+      location: "WX4FBXXFKE4F",
+      geolocation: true,
+      language: "auto",
+      unit: "c",
+      theme: "auto",
+      token: "6bf85727-fa8d-4d69-99d6-dce1666a0b42",
+      hover: "enabled",
+      container: "tp-weather-widget"
+    })
+  </script>
+</html>
