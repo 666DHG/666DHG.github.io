@@ -54,12 +54,12 @@
 </script>
   <meta name="description" content="Template011">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Template011. 素数模板">
+<meta property="og:title" content="素数">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;Template011&#x2F;index.html">
 <meta property="og:site_name" content="666DHG的博客">
 <meta property="og:description" content="Template011">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-23T13:45:33.600Z">
+<meta property="og:updated_time" content="2021-07-18T12:44:10.674Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/Template011/">
@@ -76,7 +76,7 @@
   };
 </script>
 
-  <title>Template011. 素数模板 | 666DHG的博客</title>
+  <title>素数 | 666DHG的博客</title>
   
 
 
@@ -145,11 +145,6 @@
     <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
 
   </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
-
-  </li>
         <li class="menu-item menu-item-categories">
 
     <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
@@ -200,7 +195,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Template011. 素数模板
+          素数
         </h1>
 
         <div class="post-meta">
@@ -218,7 +213,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-11-23 21:45:33" itemprop="dateModified" datetime="2019-11-23T21:45:33+08:00">2019-11-23</time>
+                <time title="Modified: 2021-07-18 20:44:10" itemprop="dateModified" datetime="2021-07-18T20:44:10+08:00">2021-07-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -271,7 +266,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="Template011"><a href="#Template011" class="headerlink" title="Template011"></a>Template011</h1><a id="more"></a>
+        <center> Template011 </center>
+
+<a id="more"></a>
 <h1 id="例题：LuoguP3383"><a href="#例题：LuoguP3383" class="headerlink" title="例题：LuoguP3383"></a><a href="https://www.luogu.org/problem/P3383" target="_blank" rel="noopener">例题：LuoguP3383</a></h1><h1 id="纯暴力"><a href="#纯暴力" class="headerlink" title="纯暴力"></a>纯暴力</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">Check</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (i&lt;<span class="number">2</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">if</span> (i==<span class="number">2</span>||i==<span class="number">3</span>) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++) <span class="keyword">if</span> (n%i==<span class="number">0</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
 <h1 id="暴力优化"><a href="#暴力优化" class="headerlink" title="暴力优化"></a>暴力优化</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">Check</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (i&lt;<span class="number">2</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">if</span> (i==<span class="number">2</span>||i==<span class="number">3</span>) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=<span class="built_in">ceil</span>(<span class="built_in">sqrt</span>(n));i++) <span class="keyword">if</span> (n%i==<span class="number">0</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
 <h1 id="埃式筛法"><a href="#埃式筛法" class="headerlink" title="埃式筛法"></a>埃式筛法</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">bool</span> vis[MAXN];</span><br><span class="line"><span class="keyword">int</span> size,prime[MAXN];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">FindPrime</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">  	vis[<span class="number">0</span>]=vis[<span class="number">1</span>]=<span class="literal">true</span>;</span><br><span class="line">  	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++) <span class="keyword">if</span> (!vis[i])</span><br><span class="line">  	  &#123;</span><br><span class="line">  	  	prime[++size]=i;</span><br><span class="line">  	  	<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">2</span>;i*j&lt;=n;j++) vis[i*j]=<span class="literal">true</span>;</span><br><span class="line">	  &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
@@ -288,16 +285,16 @@
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/Template012/" rel="next" title="Template012. Tarjan模板">
-                  <i class="fa fa-chevron-left"></i> Template012. Tarjan模板
+                <a href="/Template010/" rel="next" title="并查集">
+                  <i class="fa fa-chevron-left"></i> 并查集
                 </a>
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/Template010/" rel="prev" title="Template010. 并查集模板">
-                  Template010. 并查集模板 <i class="fa fa-chevron-right"></i>
+                <a href="/Template003/" rel="prev" title="Template003. 快读模板">
+                  Template003. 快读模板 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -338,7 +335,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Template011"><span class="nav-number">1.</span> <span class="nav-text">Template011</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#例题：LuoguP3383"><span class="nav-number">2.</span> <span class="nav-text">例题：LuoguP3383</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#纯暴力"><span class="nav-number">3.</span> <span class="nav-text">纯暴力</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#暴力优化"><span class="nav-number">4.</span> <span class="nav-text">暴力优化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#埃式筛法"><span class="nav-number">5.</span> <span class="nav-text">埃式筛法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#欧拉筛法"><span class="nav-number">6.</span> <span class="nav-text">欧拉筛法</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#例题：LuoguP3383"><span class="nav-number">1.</span> <span class="nav-text">例题：LuoguP3383</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#纯暴力"><span class="nav-number">2.</span> <span class="nav-text">纯暴力</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#暴力优化"><span class="nav-number">3.</span> <span class="nav-text">暴力优化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#埃式筛法"><span class="nav-number">4.</span> <span class="nav-text">埃式筛法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#欧拉筛法"><span class="nav-number">5.</span> <span class="nav-text">欧拉筛法</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -360,7 +357,7 @@
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
   </nav>
@@ -370,7 +367,7 @@
         <a href="https://github.com/666DHG" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;666DHG" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:1265448316@qq.com" title="E-Mail &amp;rarr; mailto:1265448316@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:paradoxyz@qq.com" title="E-Mail &amp;rarr; mailto:paradoxyz@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
       </span>
       <span class="links-of-author-item">
         <a href="https://plus.google.com/666DHG" title="Google &amp;rarr; https:&#x2F;&#x2F;plus.google.com&#x2F;666DHG" rel="noopener" target="_blank"><i class="fa fa-fw fa-google"></i>Google</a>
@@ -392,6 +389,9 @@
         </li>
         <li class="links-of-blogroll-item">
           <a href="https://syzoj.com/" title="https:&#x2F;&#x2F;syzoj.com&#x2F;" rel="noopener" target="_blank">SYZOJ</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://loj.ac/" title="https:&#x2F;&#x2F;loj.ac&#x2F;" rel="noopener" target="_blank">LibreOJ</a>
         </li>
     </ul>
   </div>

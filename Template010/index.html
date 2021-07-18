@@ -54,12 +54,12 @@
 </script>
   <meta name="description" content="Template010">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Template010. 并查集模板">
+<meta property="og:title" content="并查集">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;Template010&#x2F;index.html">
 <meta property="og:site_name" content="666DHG的博客">
 <meta property="og:description" content="Template010">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-15T12:12:31.265Z">
+<meta property="og:updated_time" content="2021-07-18T12:44:23.951Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/Template010/">
@@ -76,7 +76,7 @@
   };
 </script>
 
-  <title>Template010. 并查集模板 | 666DHG的博客</title>
+  <title>并查集 | 666DHG的博客</title>
   
 
 
@@ -145,11 +145,6 @@
     <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
 
   </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
-
-  </li>
         <li class="menu-item menu-item-categories">
 
     <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
@@ -200,7 +195,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Template010. 并查集模板
+          并查集
         </h1>
 
         <div class="post-meta">
@@ -218,7 +213,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-11-15 20:12:31" itemprop="dateModified" datetime="2019-11-15T20:12:31+08:00">2019-11-15</time>
+                <time title="Modified: 2021-07-18 20:44:23" itemprop="dateModified" datetime="2021-07-18T20:44:23+08:00">2021-07-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -271,7 +266,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="Template010"><a href="#Template010" class="headerlink" title="Template010"></a>Template010</h1><a id="more"></a>
+        <center> Template010 </center>
+
+<a id="more"></a>
 <h1 id="例题：LuoguP3367"><a href="#例题：LuoguP3367" class="headerlink" title="例题：LuoguP3367"></a><a href="https://www.luogu.org/problem/P3367" target="_blank" rel="noopener">例题：LuoguP3367</a></h1><h1 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">inti</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) f[i]=i;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
 <h1 id="寻找父亲"><a href="#寻找父亲" class="headerlink" title="寻找父亲"></a>寻找父亲</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">find</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (x==f[x]) <span class="keyword">return</span> x;</span><br><span class="line">    <span class="keyword">return</span> f[x]=find(f[x]);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
 <h1 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">merge</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> fx=find(x),fy=find(y);</span><br><span class="line">    f[fy]=fx;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
@@ -289,16 +286,16 @@
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/Template011/" rel="next" title="Template011. 素数模板">
-                  <i class="fa fa-chevron-left"></i> Template011. 素数模板
+                <a href="/Template002/" rel="next" title="Template002. 堆排序模板">
+                  <i class="fa fa-chevron-left"></i> Template002. 堆排序模板
                 </a>
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/Template009/" rel="prev" title="Template009. 树状数组模板">
-                  Template009. 树状数组模板 <i class="fa fa-chevron-right"></i>
+                <a href="/Template011/" rel="prev" title="素数">
+                  素数 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -339,7 +336,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Template010"><span class="nav-number">1.</span> <span class="nav-text">Template010</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#例题：LuoguP3367"><span class="nav-number">2.</span> <span class="nav-text">例题：LuoguP3367</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#初始化"><span class="nav-number">3.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#寻找父亲"><span class="nav-number">4.</span> <span class="nav-text">寻找父亲</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#合并"><span class="nav-number">5.</span> <span class="nav-text">合并</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#判断父亲是否相同"><span class="nav-number">6.</span> <span class="nav-text">判断父亲是否相同</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#例题代码"><span class="nav-number">7.</span> <span class="nav-text">例题代码</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#例题：LuoguP3367"><span class="nav-number">1.</span> <span class="nav-text">例题：LuoguP3367</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#初始化"><span class="nav-number">2.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#寻找父亲"><span class="nav-number">3.</span> <span class="nav-text">寻找父亲</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#合并"><span class="nav-number">4.</span> <span class="nav-text">合并</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#判断父亲是否相同"><span class="nav-number">5.</span> <span class="nav-text">判断父亲是否相同</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#例题代码"><span class="nav-number">6.</span> <span class="nav-text">例题代码</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -361,7 +358,7 @@
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
   </nav>
@@ -371,7 +368,7 @@
         <a href="https://github.com/666DHG" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;666DHG" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:1265448316@qq.com" title="E-Mail &amp;rarr; mailto:1265448316@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:paradoxyz@qq.com" title="E-Mail &amp;rarr; mailto:paradoxyz@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
       </span>
       <span class="links-of-author-item">
         <a href="https://plus.google.com/666DHG" title="Google &amp;rarr; https:&#x2F;&#x2F;plus.google.com&#x2F;666DHG" rel="noopener" target="_blank"><i class="fa fa-fw fa-google"></i>Google</a>
@@ -393,6 +390,9 @@
         </li>
         <li class="links-of-blogroll-item">
           <a href="https://syzoj.com/" title="https:&#x2F;&#x2F;syzoj.com&#x2F;" rel="noopener" target="_blank">SYZOJ</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://loj.ac/" title="https:&#x2F;&#x2F;loj.ac&#x2F;" rel="noopener" target="_blank">LibreOJ</a>
         </li>
     </ul>
   </div>

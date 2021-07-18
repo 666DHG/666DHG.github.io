@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-flash.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.4.2',
+    exturl: false,
+    sidebar: {"position":"left","display":"hide","offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":true,"style":"flat"},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":true},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: true,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: 'Copy',
+      copy_success: 'Copied',
+      copy_failure: 'Copy failed'
+    },
+    sidebarPadding: 40
+  };
+</script>
+  <meta name="description" content="Thematic003">
+<meta property="og:type" content="article">
+<meta property="og:title" content="图论">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;Thematic003&#x2F;index.html">
+<meta property="og:site_name" content="666DHG的博客">
+<meta property="og:description" content="Thematic003">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2021-07-18T12:58:02.065Z">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/Thematic003/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>图论 | 666DHG的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="666DHG的博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">666DHG的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">20186gdoi13</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-data">
+
+    <a href="/data/" rel="section"><i class="fa fa-fw fa-cloud"></i>Data</a>
+
+  </li>
+        <li class="menu-item menu-item-playlist">
+
+    <a href="/playlist/" rel="section"><i class="fa fa-fw fa-music"></i>Playlist</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/Thematic003/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/data/Avatar/LKS_ZhuGeliang.jpg">
+      <meta itemprop="name" content="杨钧">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="666DHG的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          图论
+        </h1>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2021-07-18 20:51:36 / Modified: 20:58:02" itemprop="dateCreated datePublished" datetime="2021-07-18T20:51:36+08:00">2021-07-18</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Thematic003/" itemprop="url" rel="index">
+                    <span itemprop="name">Thematic003</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/Thematic003/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Thematic003/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>5k</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>5 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <center> Thematic003 </center>
+
+<a id="more"></a>
+<h2 id="单源最短路径"><a href="#单源最短路径" class="headerlink" title="单源最短路径"></a>单源最短路径</h2><h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><p><a href="https://www.luogu.org/problem/P3371" target="_blank" rel="noopener">例题1：LuoguP3371</a></p>
+<p><a href="https://www.luogu.org/problem/P4779" target="_blank" rel="noopener">例题2：LuoguP4779</a></p>
+<h3 id="Dijkstra"><a href="#Dijkstra" class="headerlink" title="Dijkstra"></a>Dijkstra</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Edge</span></span></span><br><span class="line"><span class="class">  &#123;</span></span><br><span class="line">  	<span class="keyword">int</span> y,z;</span><br><span class="line">  &#125;;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Node</span></span></span><br><span class="line"><span class="class">  &#123;</span></span><br><span class="line">  	<span class="keyword">int</span> now,dis;</span><br><span class="line">  	<span class="keyword">bool</span> <span class="keyword">operator</span> &lt; (<span class="keyword">const</span> Node &amp;a) <span class="keyword">const</span></span><br><span class="line">  	  &#123;</span><br><span class="line">  	  	<span class="keyword">return</span> a.dis&lt;dis;</span><br><span class="line">	  &#125;</span><br><span class="line">  &#125;;</span><br><span class="line"><span class="keyword">bool</span> vis[<span class="number">100005</span>];</span><br><span class="line"><span class="built_in">vector</span> &lt;Edge&gt; V[<span class="number">100005</span>];</span><br><span class="line">priority_queue &lt;Node&gt; Q;</span><br><span class="line"><span class="keyword">int</span> a,b,n,m,x,y,z,d[<span class="number">100005</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Dijkstra</span><span class="params">(<span class="keyword">int</span> start)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">  	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) d[i]=<span class="number">99999999</span>;</span><br><span class="line">	d[start]=<span class="number">0</span>;</span><br><span class="line">	Q.push((Node)&#123;start,<span class="number">0</span>&#125;);</span><br><span class="line">	<span class="keyword">while</span> (!Q.empty())</span><br><span class="line">	  &#123;</span><br><span class="line">	  	<span class="keyword">int</span> now=Q.top().now;</span><br><span class="line">	  	Q.pop();</span><br><span class="line">	  	<span class="keyword">if</span> (vis[now]) <span class="keyword">continue</span>;</span><br><span class="line">	  	vis[now]=<span class="literal">true</span>;</span><br><span class="line">	  	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;V[now].size();i++)</span><br><span class="line">	  	  &#123;</span><br><span class="line">	  	  	<span class="keyword">int</span> next=V[now][i].y;</span><br><span class="line">	  	  	<span class="keyword">int</span> nfar=V[now][i].z;</span><br><span class="line">	  	  	<span class="keyword">if</span> (d[next]&gt;d[now]+nfar) </span><br><span class="line">                          d[next]=d[now]+nfar,Q.push((Node)&#123;next,d[next]&#125;);</span><br><span class="line">		  &#125;</span><br><span class="line">	  &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">  	<span class="built_in">scanf</span>(<span class="string">"%d%d%d%d"</span>,&amp;n,&amp;m,&amp;x,&amp;y);</span><br><span class="line">  	<span class="keyword">while</span> (m--)</span><br><span class="line">  	  &#123;</span><br><span class="line">  	  	<span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>,&amp;a,&amp;b,&amp;z);</span><br><span class="line">  	  	V[a].push_back((Edge)&#123;b,z&#125;);</span><br><span class="line">  	  	V[b].push_back((Edge)&#123;a,z&#125;);</span><br><span class="line">	  &#125;</span><br><span class="line">	Dijkstra(x);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d"</span>,d[y]);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="SPFA"><a href="#SPFA" class="headerlink" title="SPFA"></a>SPFA</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Edge</span></span></span><br><span class="line"><span class="class">  &#123;</span></span><br><span class="line">  	<span class="keyword">int</span> y,z;</span><br><span class="line">  &#125;;</span><br><span class="line"><span class="built_in">queue</span> &lt;<span class="keyword">int</span>&gt; Q;</span><br><span class="line"><span class="keyword">bool</span> vis[<span class="number">100005</span>];</span><br><span class="line"><span class="built_in">vector</span> &lt;Edge&gt; V[<span class="number">500005</span>];</span><br><span class="line"><span class="keyword">int</span> n,m,x,y,a,b,z,d[<span class="number">100005</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SPFA</span><span class="params">(<span class="keyword">int</span> start)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">  	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) d[i]=<span class="number">99999999</span>;</span><br><span class="line">  	Q.push(start);</span><br><span class="line">  	d[start]=<span class="number">0</span>;</span><br><span class="line">  	vis[start]=<span class="literal">true</span>;</span><br><span class="line">  	<span class="keyword">while</span> (!Q.empty())</span><br><span class="line">  	  &#123;</span><br><span class="line">  	  	<span class="keyword">int</span> now=Q.front();</span><br><span class="line">  	  	Q.pop();</span><br><span class="line">  	  	vis[now]=<span class="literal">false</span>;</span><br><span class="line">  	  	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;V[now].size();i++)</span><br><span class="line">  	  	  &#123;</span><br><span class="line">  	  	  	<span class="keyword">int</span> next=V[now][i].y;</span><br><span class="line">  	  	  	<span class="keyword">int</span> nfar=V[now][i].z;</span><br><span class="line">  	  	  	<span class="keyword">if</span> (d[next]&gt;d[now]+nfar)</span><br><span class="line">  	  	  	  &#123;</span><br><span class="line">  	  	  	  	d[next]=d[now]+nfar;</span><br><span class="line">  	  	  	  	<span class="keyword">if</span> (!vis[next]) vis[next]=<span class="literal">true</span>,Q.push(next);</span><br><span class="line">			  &#125;</span><br><span class="line">		  &#125;</span><br><span class="line">	  &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">  	<span class="built_in">scanf</span>(<span class="string">"%d%d%d%d"</span>,&amp;n,&amp;m,&amp;x,&amp;y);</span><br><span class="line">  	<span class="keyword">while</span> (m--)</span><br><span class="line">  	  &#123;</span><br><span class="line">  	  	<span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>,&amp;a,&amp;b,&amp;z);</span><br><span class="line">  	  	V[a].push_back((Edge)&#123;b,z&#125;);</span><br><span class="line">	  &#125;</span><br><span class="line">	SPFA(x);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d"</span>,d[y]);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="强连通分量-amp-缩点"><a href="#强连通分量-amp-缩点" class="headerlink" title="强连通分量 &amp; 缩点"></a>强连通分量 &amp; 缩点</h2><p><a href="https://www.luogu.com.cn/problem/P2341" target="_blank" rel="noopener">例题：LuoguP2341</a></p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><h4 id="全局变量"><a href="#全局变量" class="headerlink" title="全局变量"></a>全局变量</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Tarjan</span></span><br><span class="line"><span class="built_in">stack</span> &lt;<span class="keyword">int</span>&gt; S;</span><br><span class="line"><span class="keyword">bool</span> inst[MAXN];</span><br><span class="line"><span class="built_in">vector</span> &lt;<span class="keyword">int</span>&gt; V[MAXN];</span><br><span class="line"><span class="keyword">int</span> n,m,col,cnt,dfn[MAXN],low[MAXN],color[MAXN];</span><br><span class="line"></span><br><span class="line"><span class="comment">//Extra</span></span><br><span class="line"><span class="keyword">int</span> colt[MAXN];</span><br><span class="line"><span class="built_in">vector</span> &lt;<span class="keyword">int</span>&gt; V2[MAXN];</span><br></pre></td></tr></table></figure>
+<h4 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">inti</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    cnt=col=<span class="number">0</span>;</span><br><span class="line">  <span class="built_in">memset</span>(dfn,<span class="number">0</span>,<span class="keyword">sizeof</span>(dfn));</span><br><span class="line">    <span class="built_in">memset</span>(low,<span class="number">0</span>,<span class="keyword">sizeof</span>(low));</span><br><span class="line">    <span class="built_in">memset</span>(colt,<span class="number">0</span>,<span class="keyword">sizeof</span>(colt));</span><br><span class="line">  <span class="built_in">memset</span>(color,<span class="number">0</span>,<span class="keyword">sizeof</span>(color));</span><br><span class="line">    <span class="built_in">memset</span>(inst,<span class="literal">false</span>,<span class="keyword">sizeof</span>(inst));</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;MAXN;i++) V[i].clear();</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;MAXN;i++) V2[i].clear();</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<h4 id="Tarjan"><a href="#Tarjan" class="headerlink" title="Tarjan"></a>Tarjan</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Tarjan</span><span class="params">(<span class="keyword">int</span> now)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    dfn[now]=low[now]=++cnt;</span><br><span class="line">    inst[now]=<span class="literal">true</span>;</span><br><span class="line">    S.push(now);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;V[now].size();i++)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="keyword">int</span> next=V[now][i];</span><br><span class="line">        <span class="keyword">if</span> (!dfn[next])</span><br><span class="line">          &#123;</span><br><span class="line">            Tarjan(next);</span><br><span class="line">            low[now]=min(low[now],low[next]);</span><br><span class="line">      &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (inst[next]) low[now]=min(low[now],dfn[next]);</span><br><span class="line">    &#125;</span><br><span class="line">  <span class="keyword">if</span> (dfn[now]==low[now])</span><br><span class="line">    &#123;</span><br><span class="line">      col++;</span><br><span class="line">      <span class="keyword">int</span> s;</span><br><span class="line">      <span class="keyword">do</span></span><br><span class="line">        &#123;</span><br><span class="line">          s=S.top();</span><br><span class="line">          S.pop();</span><br><span class="line">          inst[s]=<span class="literal">false</span>;</span><br><span class="line">          color[s]=col;</span><br><span class="line">            </span><br><span class="line">          <span class="comment">// Extra：记录每个强连通分量内的节点数 </span></span><br><span class="line">          <span class="comment">// colt[col]++;</span></span><br><span class="line">            </span><br><span class="line">      &#125; <span class="keyword">while</span> (s!=now);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<h4 id="Extra：重新建图"><a href="#Extra：重新建图" class="headerlink" title="Extra：重新建图"></a>Extra：重新建图</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">ReGraph</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> acolor;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        acolor=color[i];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;V[now].size();j++) </span><br><span class="line">          &#123;</span><br><span class="line">            bcolor=color[V[i][j]];</span><br><span class="line">            <span class="keyword">if</span> (acolor!=bcolor) V2[acolor].push_back(bcolor);</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<h4 id="主函数"><a href="#主函数" class="headerlink" title="主函数"></a>主函数</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    inti();</span><br><span class="line">  <span class="comment">/* Input */</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) <span class="keyword">if</span> (!dfn[i]) Tarjan(i); <span class="comment">//Tarjan图不一定联通 </span></span><br><span class="line">    <span class="comment">// ReGraph();</span></span><br><span class="line">    <span class="comment">/* Output */</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<h4 id="例题代码"><a href="#例题代码" class="headerlink" title="例题代码"></a>例题代码</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MAXN=<span class="number">10005</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">stack</span> &lt;<span class="keyword">int</span>&gt; S;</span><br><span class="line"><span class="keyword">bool</span> inst[MAXN];</span><br><span class="line"><span class="built_in">vector</span> &lt;<span class="keyword">int</span>&gt; V[MAXN];</span><br><span class="line"><span class="keyword">int</span> n,m,col,cnt,dfn[MAXN],low[MAXN],color[MAXN],colt[MAXN],du[MAXN];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">inti</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    cnt=col=<span class="number">0</span>;</span><br><span class="line">    <span class="built_in">memset</span>(du,<span class="number">0</span>,<span class="keyword">sizeof</span>(du));</span><br><span class="line">    <span class="built_in">memset</span>(dfn,<span class="number">0</span>,<span class="keyword">sizeof</span>(dfn));</span><br><span class="line">    <span class="built_in">memset</span>(low,<span class="number">0</span>,<span class="keyword">sizeof</span>(low));</span><br><span class="line">    <span class="built_in">memset</span>(colt,<span class="number">0</span>,<span class="keyword">sizeof</span>(colt));</span><br><span class="line">    <span class="built_in">memset</span>(color,<span class="number">0</span>,<span class="keyword">sizeof</span>(color));</span><br><span class="line">    <span class="built_in">memset</span>(inst,<span class="literal">false</span>,<span class="keyword">sizeof</span>(inst));</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;MAXN;i++) V[i].clear();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Tarjan</span><span class="params">(<span class="keyword">int</span> now)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    dfn[now]=low[now]=++cnt;</span><br><span class="line">    inst[now]=<span class="literal">true</span>;</span><br><span class="line">    S.push(now);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;V[now].size();i++)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="keyword">int</span> next=V[now][i];</span><br><span class="line">        <span class="keyword">if</span> (!dfn[next])</span><br><span class="line">          &#123;</span><br><span class="line">            Tarjan(next);</span><br><span class="line">            low[now]=min(low[now],low[next]);</span><br><span class="line">      &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (inst[next]) low[now]=min(low[now],dfn[next]);</span><br><span class="line">    &#125;</span><br><span class="line">  <span class="keyword">if</span> (dfn[now]==low[now])</span><br><span class="line">    &#123;</span><br><span class="line">      col++;</span><br><span class="line">      <span class="keyword">int</span> s;</span><br><span class="line">      <span class="keyword">do</span></span><br><span class="line">        &#123;</span><br><span class="line">          s=S.top();</span><br><span class="line">          S.pop();</span><br><span class="line">          inst[s]=<span class="literal">false</span>;</span><br><span class="line">          color[s]=col;</span><br><span class="line">          colt[col]++;</span><br><span class="line">      &#125; <span class="keyword">while</span> (s!=now);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">ReGraph</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;V[i].size();j++)</span><br><span class="line">      <span class="keyword">if</span> (color[i]!=color[V[i][j]])</span><br><span class="line">      du[color[i]]++;</span><br><span class="line">  &#125; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x,y,ans=<span class="number">0</span>;</span><br><span class="line">  inti();</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;n,&amp;m);</span><br><span class="line">    <span class="keyword">while</span> (m--)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="keyword">int</span> x,y;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;x,&amp;y);</span><br><span class="line">        V[x].push_back(y);</span><br><span class="line">    &#125;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) <span class="keyword">if</span> (!dfn[i]) Tarjan(i);</span><br><span class="line">  ReGraph();</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=col;i++) <span class="keyword">if</span> (du[i]==<span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (ans) <span class="keyword">return</span> <span class="built_in">printf</span>(<span class="string">"0"</span>)&amp;<span class="number">0</span>;</span><br><span class="line">      ans=colt[i];</span><br><span class="line">    &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">printf</span>(<span class="string">"%d"</span>,ans)&amp;<span class="number">0</span>;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="割点"><a href="#割点" class="headerlink" title="割点"></a>割点</h2><p><a href="https://www.luogu.com.cn/problem/P3388" target="_blank" rel="noopener">例题：LuoguP3388</a></p>
+<h3 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h3><h4 id="Tarjan-1"><a href="#Tarjan-1" class="headerlink" title="Tarjan"></a>Tarjan</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="割边"><a href="#割边" class="headerlink" title="割边"></a>割边</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Tarjan</span><span class="params">(<span class="keyword">int</span> now,<span class="keyword">int</span> last)</span></span></span><br><span class="line"><span class="function">  </span>&#123;</span><br><span class="line">    dfn[now]=low[now]=++cnt;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;V[now].size();i++)</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="keyword">int</span> next=V[now][i];</span><br><span class="line">        <span class="keyword">if</span> (!dfn[next])</span><br><span class="line">          &#123;</span><br><span class="line">            work(next,now);</span><br><span class="line">            low[now]=min(low[now],low[next]);</span><br><span class="line">            <span class="keyword">if</span> (low[next]&gt;dfn[now]) <span class="comment">/*SaveRoad*/</span></span><br><span class="line">          &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (next!=last&amp;&amp;dfn[next]&lt;dfn[now])</span><br><span class="line">          low[now]=min(low[now],dfn[next]);</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/Toolbox002/" rel="next" title="Hexo NexT 插件 - APlayer">
+                  <i class="fa fa-chevron-left"></i> Hexo NexT 插件 - APlayer
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+                <a href="/Thematic004/" rel="prev" title="树">
+                  树 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    <div class="comments" id="comments"></div>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#单源最短路径"><span class="nav-number">1.</span> <span class="nav-text">单源最短路径</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#例题"><span class="nav-number">1.1.</span> <span class="nav-text">例题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dijkstra"><span class="nav-number">1.2.</span> <span class="nav-text">Dijkstra</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SPFA"><span class="nav-number">1.3.</span> <span class="nav-text">SPFA</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#强连通分量-amp-缩点"><span class="nav-number">2.</span> <span class="nav-text">强连通分量 &amp; 缩点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number">2.1.</span> <span class="nav-text">代码</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#全局变量"><span class="nav-number">2.1.1.</span> <span class="nav-text">全局变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化"><span class="nav-number">2.1.2.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Tarjan"><span class="nav-number">2.1.3.</span> <span class="nav-text">Tarjan</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Extra：重新建图"><span class="nav-number">2.1.4.</span> <span class="nav-text">Extra：重新建图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#主函数"><span class="nav-number">2.1.5.</span> <span class="nav-text">主函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#例题代码"><span class="nav-number">2.1.6.</span> <span class="nav-text">例题代码</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#割点"><span class="nav-number">3.</span> <span class="nav-text">割点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码-1"><span class="nav-number">3.1.</span> <span class="nav-text">代码</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Tarjan-1"><span class="nav-number">3.1.1.</span> <span class="nav-text">Tarjan</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#割边"><span class="nav-number">4.</span> <span class="nav-text">割边</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="site-author-image" itemprop="image" alt="杨钧"
+    src="/data/Avatar/LKS_ZhuGeliang.jpg">
+  <p class="site-author-name" itemprop="name">杨钧</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/666DHG" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;666DHG" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:paradoxyz@qq.com" title="E-Mail &amp;rarr; mailto:paradoxyz@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://plus.google.com/666DHG" title="Google &amp;rarr; https:&#x2F;&#x2F;plus.google.com&#x2F;666DHG" rel="noopener" target="_blank"><i class="fa fa-fw fa-google"></i>Google</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/352303717" title="Bilibili &amp;rarr; https:&#x2F;&#x2F;space.bilibili.com&#x2F;352303717" rel="noopener" target="_blank"><i class="fa fa-fw fa-play"></i>Bilibili</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://www.luogu.com.cn/" title="https:&#x2F;&#x2F;www.luogu.com.cn&#x2F;" rel="noopener" target="_blank">Luogu</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://syzoj.com/" title="https:&#x2F;&#x2F;syzoj.com&#x2F;" rel="noopener" target="_blank">SYZOJ</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://loj.ac/" title="https:&#x2F;&#x2F;loj.ac&#x2F;" rel="noopener" target="_blank">LibreOJ</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">杨钧</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="Symbols count total">35k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="Reading time total">31 mins.</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.0.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.4.2
+  </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/pisces.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+<script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script>
+
+    
+
+  
+
+
+<script>
+NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(item => {
+    return GUEST.includes(item);
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'MbYJUXsMbHJLM8OACqy55MoX-gzGzoHsz',
+    appKey: 've7fNI4TTJtW21HzcQ6d4j4H',
+    placeholder: "Just go go",
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: 'zh-cn' || 'zh-cn',
+    path: location.pathname,
+    recordIP: false,
+    serverURLs: ''
+  });
+}, window.Valine);
+</script>
+</body>
+<div id="tp-weather-widget"></div>
+  <script>
+    (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
+    window.SeniverseWeatherWidget('show', {
+      flavor: "bubble",
+      location: "WX4FBXXFKE4F",
+      geolocation: true,
+      language: "auto",
+      unit: "c",
+      theme: "auto",
+      token: "6bf85727-fa8d-4d69-99d6-dce1666a0b42",
+      hover: "enabled",
+      container: "tp-weather-widget"
+    })
+  </script>
+</html>

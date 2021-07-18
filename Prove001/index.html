@@ -52,14 +52,14 @@
     sidebarPadding: 40
   };
 </script>
-  <meta name="description" content="Prove001 持续更新中…详细代码请到 「Thematic001. 数论专题」 中查看">
+  <meta name="description" content="详细代码请到 「Thematic001. 数论专题」 中查看">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Prove001">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;Prove001&#x2F;index.html">
 <meta property="og:site_name" content="666DHG的博客">
-<meta property="og:description" content="Prove001 持续更新中…详细代码请到 「Thematic001. 数论专题」 中查看">
+<meta property="og:description" content="详细代码请到 「Thematic001. 数论专题」 中查看">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-02-23T07:26:25.272Z">
+<meta property="og:updated_time" content="2021-07-18T12:08:06.873Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/Prove001/">
@@ -145,11 +145,6 @@
     <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
 
   </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
-
-  </li>
         <li class="menu-item menu-item-categories">
 
     <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
@@ -222,7 +217,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-02-23 15:26:25" itemprop="dateModified" datetime="2020-02-23T15:26:25+08:00">2020-02-23</time>
+                <time title="Modified: 2021-07-18 20:08:06" itemprop="dateModified" datetime="2021-07-18T20:08:06+08:00">2021-07-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -256,7 +251,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>3.8k</span>
+              <span>3.7k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -275,11 +270,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="Prove001"><a href="#Prove001" class="headerlink" title="Prove001"></a>Prove001</h1><blockquote>
-<p>持续更新中…<br>详细代码请到 「<a href="\Thematic001">Thematic001. 数论专题</a>」 中查看</p>
+        <blockquote>
+<p>详细代码请到 「<a href="\Thematic001">Thematic001. 数论专题</a>」 中查看</p>
 </blockquote>
 <a id="more"></a>
-<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><ul>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
 <li><a href="/Prove001/#分解质因数">分解质因数</a></li>
 <li><a href="/Prove001/#欧拉函数">欧拉函数</a></li>
 <li><a href="/Prove001/#约数">约数</a></li>
@@ -290,60 +285,48 @@
 <li><a href="/Prove001/#中国剩余定理（拓展）">中国剩余定理（拓展）</a></li>
 </ul>
 <hr>
-<h1 id="分解质因数"><a href="#分解质因数" class="headerlink" title="分解质因数"></a>分解质因数</h1><script type="math/tex; mode=display">\large n=p_{1}^{c_{1}}p_{2}^{c_{2}}\cdots p_{m}^{c_{m}}</script><hr>
-<h1 id="欧拉函数"><a href="#欧拉函数" class="headerlink" title="欧拉函数"></a>欧拉函数</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>$\varphi$($x$) 表示求在 $1$ 到 $x$ 的整数中有多少个数与 $x$ 互质</p>
-<h2 id="求-varphi-n"><a href="#求-varphi-n" class="headerlink" title="求 $\varphi(n)$"></a>求 $\varphi(n)$</h2><script type="math/tex; mode=display">\large \varphi(n)=n\times(1-\frac{1}{p_{1}})\times(1-\frac{1}{p_{2}})\times\cdots\times(1-\frac{1}{p_{m}})</script><h2 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h2><ul>
-<li><h3 id="varphi-1-varphi-2-1-，其余的欧拉函数均为偶数"><a href="#varphi-1-varphi-2-1-，其余的欧拉函数均为偶数" class="headerlink" title="$\varphi(1)=\varphi(2)=1$，其余的欧拉函数均为偶数"></a>$\varphi(1)=\varphi(2)=1$，其余的欧拉函数均为偶数</h3></li>
-<li><h3 id="当-n-为素数时，-varphi-n-n-1"><a href="#当-n-为素数时，-varphi-n-n-1" class="headerlink" title="当 $n$ 为素数时，$\varphi(n)=n-1$"></a>当 $n$ 为素数时，$\varphi(n)=n-1$</h3></li>
-<li><h3 id="欧拉函数是积性函数，但不是完全积性。"><a href="#欧拉函数是积性函数，但不是完全积性。" class="headerlink" title="欧拉函数是积性函数，但不是完全积性。"></a>欧拉函数是积性函数，但不是完全积性。</h3></li>
-</ul>
-<blockquote>
+<h2 id="分解质因数"><a href="#分解质因数" class="headerlink" title="分解质因数"></a>分解质因数</h2><script type="math/tex; mode=display">\large n=p_{1}^{c_{1}}p_{2}^{c_{2}}\cdots p_{m}^{c_{m}}</script><hr>
+<h2 id="欧拉函数"><a href="#欧拉函数" class="headerlink" title="欧拉函数"></a>欧拉函数</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>$\varphi$($x$) 表示求在 $1$ 到 $x$ 的整数中有多少个数与 $x$ 互质</p>
+<h3 id="求-varphi-n"><a href="#求-varphi-n" class="headerlink" title="求 $\varphi(n)$"></a>求 $\varphi(n)$</h3><script type="math/tex; mode=display">\large \varphi(n)=n\times(1-\frac{1}{p_{1}})\times(1-\frac{1}{p_{2}})\times\cdots\times(1-\frac{1}{p_{m}})</script><h3 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h3><ul>
+<li>$\varphi(1)=\varphi(2)=1$，其余的欧拉函数均为偶数</li>
+<li>当 $n$ 为素数时，$\varphi(n)=n-1$</li>
+<li>欧拉函数是积性函数，但不是完全积性。<blockquote>
 <p>即当 $\gcd(n,m)=1$ 时，$\varphi(nm)=\varphi(n)\varphi(m)$</p>
 </blockquote>
-<ul>
-<li><h3 id="当-n-为奇数时，-varphi-2n-varphi-n"><a href="#当-n-为奇数时，-varphi-2n-varphi-n" class="headerlink" title="当 $n$ 为奇数时，$\varphi(2n)=\varphi(n)$"></a>当 $n$ 为奇数时，$\varphi(2n)=\varphi(n)$</h3></li>
-<li><h3 id="当-n-为素数时，-varphi-n-k-n-1-times-n-k-1"><a href="#当-n-为素数时，-varphi-n-k-n-1-times-n-k-1" class="headerlink" title="当 $n$ 为素数时，$\varphi(n^{k})=(n-1)\times n^{k-1}$"></a>当 $n$ 为素数时，$\varphi(n^{k})=(n-1)\times n^{k-1}$</h3></li>
-<li><h3 id="当-n-geq-1-时，-1-到-n-中所有与-n-互质的数的和为-frac-varphi-n-2-times-n"><a href="#当-n-geq-1-时，-1-到-n-中所有与-n-互质的数的和为-frac-varphi-n-2-times-n" class="headerlink" title="当 $n \geq 1$ 时，$1$ 到 $n$ 中所有与 $n$ 互质的数的和为 $\frac{\varphi(n)}{2}\times n$"></a>当 $n \geq 1$ 时，$1$ 到 $n$ 中所有与 $n$ 互质的数的和为 $\frac{\varphi(n)}{2}\times n$</h3></li>
-</ul>
-<blockquote>
-<p>证明：</p>
-<p>若 $\gcd(n,i)=1$，那么 $\gcd(n,n-i)=1$</p>
-<p>即 与 $n$ 互质的数是<strong>成对出现</strong>的，而且每一对的和<strong>都为 $n$</strong>。</p>
+</li>
+<li>当 $n$ 为奇数时，$\varphi(2n)=\varphi(n)$</li>
+<li>当 $n$ 为素数时，$\varphi(n^{k})=(n-1)\times n^{k-1}$</li>
+<li>当 $n \geq 1$ 时，$1$ 到 $n$ 中所有与 $n$ 互质的数的和为 $\frac{\varphi(n)}{2}\times n$<blockquote>
+<p>证明：<br>若 $\gcd(n,i)=1$，那么 $\gcd(n,n-i)=1$<br>即 与 $n$ 互质的数是<strong>成对出现</strong>的，而且每一对的和<strong>都为 $n$</strong>。</p>
 </blockquote>
-<ul>
-<li><h3 id="如果-k-bmod-p-0-且-p-为素数，那么-varphi-kp-varphi-k-times-p"><a href="#如果-k-bmod-p-0-且-p-为素数，那么-varphi-kp-varphi-k-times-p" class="headerlink" title="如果 $k \bmod p = 0$ 且 $p$ 为素数，那么 $\varphi(kp)=\varphi(k)\times p$"></a>如果 $k \bmod p = 0$ 且 $p$ 为素数，那么 $\varphi(kp)=\varphi(k)\times p$</h3></li>
-<li><h3 id="如果-k-bmod-p-neq-0-且-p-为素数，那么-varphi-kp-varphi-k-times-p-1"><a href="#如果-k-bmod-p-neq-0-且-p-为素数，那么-varphi-kp-varphi-k-times-p-1" class="headerlink" title="如果 $k \bmod p \neq 0$ 且 $p$ 为素数，那么 $\varphi(kp)=\varphi(k)\times (p-1)$"></a>如果 $k \bmod p \neq 0$ 且 $p$ 为素数，那么 $\varphi(kp)=\varphi(k)\times (p-1)$</h3></li>
-<li><h3 id="如果-gcd-a-p-1-，那么-a-varphi-p-equiv-1-pmod-p"><a href="#如果-gcd-a-p-1-，那么-a-varphi-p-equiv-1-pmod-p" class="headerlink" title="如果 $\gcd(a,p)=1$ ，那么 $a^{\varphi(p)}\equiv 1 \pmod p$"></a>如果 $\gcd(a,p)=1$ ，那么 $a^{\varphi(p)}\equiv 1 \pmod p$</h3></li>
+</li>
+<li>如果 $k \bmod p = 0$ 且 $p$ 为素数，那么 $\varphi(kp)=\varphi(k)\times p$</li>
+<li>如果 $k \bmod p \neq 0$ 且 $p$ 为素数，那么 $\varphi(kp)=\varphi(k)\times (p-1)$</li>
+<li>如果 $\gcd(a,p)=1$ ，那么 $a^{\varphi(p)}\equiv 1 \pmod p$</li>
 </ul>
 <hr>
-<h1 id="约数"><a href="#约数" class="headerlink" title="约数"></a>约数</h1><h2 id="求-n-的正约数个数"><a href="#求-n-的正约数个数" class="headerlink" title="求 $n$ 的正约数个数"></a>求 $n$ 的正约数个数</h2><script type="math/tex; mode=display">\large (c_{1}+1)(c_{2}+2)\cdots(c_{m}+m)</script><h2 id="求-n-所有正约数的和"><a href="#求-n-所有正约数的和" class="headerlink" title="求 $n$ 所有正约数的和"></a>求 $n$ 所有正约数的和</h2><script type="math/tex; mode=display">\large (1+p_{1}+p_{1}^{2}+\cdots+p_{1}^{c_{1}})\cdots(1+p_{m}+p_{m}^{2}+\cdots+p_{m}^{c_{m}})</script><hr>
-<h1 id="最大公约数-amp-最小公倍数"><a href="#最大公约数-amp-最小公倍数" class="headerlink" title="最大公约数 &amp; 最小公倍数"></a>最大公约数 &amp; 最小公倍数</h1><h2 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h2><script type="math/tex; mode=display">\large \gcd(a,b)\times \operatorname{lcm}(a,b)=a\times b</script><script type="math/tex; mode=display">\large \gcd(ka,kb)=k\times \gcd(a,b)</script><script type="math/tex; mode=display">\large \operatorname{lcm}(ka,kb)=k\times \operatorname{lcm}(a,b)</script><script type="math/tex; mode=display">\large \operatorname{lcm}(\frac{S}{a},\frac{S}{b})=\frac{S}{\gcd(a,b)}</script><h2 id="求最大公倍数"><a href="#求最大公倍数" class="headerlink" title="求最大公倍数"></a>求最大公倍数</h2><ul>
-<li><h3 id="更相减损术"><a href="#更相减损术" class="headerlink" title="更相减损术"></a>更相减损术</h3></li>
-<li><h3 id="欧几里得（-text-辗转相除法-text-）"><a href="#欧几里得（-text-辗转相除法-text-）" class="headerlink" title="欧几里得（$\text{ }$辗转相除法$\text{ }$）"></a>欧几里得（$\text{ }$辗转相除法$\text{ }$）</h3></li>
-<li><h3 id="二进制算法"><a href="#二进制算法" class="headerlink" title="二进制算法"></a>二进制算法</h3></li>
+<h2 id="约数"><a href="#约数" class="headerlink" title="约数"></a>约数</h2><h3 id="求-n-的正约数个数"><a href="#求-n-的正约数个数" class="headerlink" title="求 $n$ 的正约数个数"></a>求 $n$ 的正约数个数</h3><script type="math/tex; mode=display">\large (c_{1}+1)(c_{2}+2)\cdots(c_{m}+m)</script><h3 id="求-n-所有正约数的和"><a href="#求-n-所有正约数的和" class="headerlink" title="求 $n$ 所有正约数的和"></a>求 $n$ 所有正约数的和</h3><script type="math/tex; mode=display">\large (1+p_{1}+p_{1}^{2}+\cdots+p_{1}^{c_{1}})\cdots(1+p_{m}+p_{m}^{2}+\cdots+p_{m}^{c_{m}})</script><hr>
+<h2 id="最大公约数-amp-最小公倍数"><a href="#最大公约数-amp-最小公倍数" class="headerlink" title="最大公约数 &amp; 最小公倍数"></a>最大公约数 &amp; 最小公倍数</h2><h3 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h3><script type="math/tex; mode=display">\large \gcd(a,b)\times \operatorname{lcm}(a,b)=a\times b</script><script type="math/tex; mode=display">\large \gcd(ka,kb)=k\times \gcd(a,b)</script><script type="math/tex; mode=display">\large \operatorname{lcm}(ka,kb)=k\times \operatorname{lcm}(a,b)</script><script type="math/tex; mode=display">\large \operatorname{lcm}(\frac{S}{a},\frac{S}{b})=\frac{S}{\gcd(a,b)}</script><h3 id="求最大公倍数"><a href="#求最大公倍数" class="headerlink" title="求最大公倍数"></a>求最大公倍数</h3><ul>
+<li>更相减损术</li>
+<li>欧几里得（$\text{ }$辗转相除法$\text{ }$）</li>
+<li>二进制算法</li>
 </ul>
 <hr>
-<h1 id="乘法逆元"><a href="#乘法逆元" class="headerlink" title="乘法逆元"></a>乘法逆元</h1><h2 id="解决的问题"><a href="#解决的问题" class="headerlink" title="解决的问题"></a>解决的问题</h2><p>求下面关于 $x$ 的同余方程的整数解</p>
-<script type="math/tex; mode=display">\large ax \equiv 1\pmod b</script><h2 id="定理-1"><a href="#定理-1" class="headerlink" title="定理"></a>定理</h2><script type="math/tex; mode=display">\large (\frac{a}{b}) \bmod p</script><script type="math/tex; mode=display">\large =(a\times a\text{的逆元}) \bmod p</script><h2 id="求乘法逆元"><a href="#求乘法逆元" class="headerlink" title="求乘法逆元"></a>求乘法逆元</h2><ul>
-<li><h3 id="欧几里得（拓展）"><a href="#欧几里得（拓展）" class="headerlink" title="欧几里得（拓展）"></a>欧几里得（拓展）</h3></li>
-</ul>
-<p>可以将上面的同余方程化为</p>
-<script type="math/tex; mode=display">\large ax=1-by</script><script type="math/tex; mode=display">\large ax+by=1</script><ul>
-<li><h3 id="快速幂"><a href="#快速幂" class="headerlink" title="快速幂"></a>快速幂</h3></li>
-</ul>
-<p>这里需要用到<strong>费马小定理</strong></p>
+<h2 id="乘法逆元"><a href="#乘法逆元" class="headerlink" title="乘法逆元"></a>乘法逆元</h2><h3 id="解决的问题"><a href="#解决的问题" class="headerlink" title="解决的问题"></a>解决的问题</h3><p>求下面关于 $x$ 的同余方程的整数解</p>
+<script type="math/tex; mode=display">\large ax \equiv 1\pmod b</script><h3 id="定理-1"><a href="#定理-1" class="headerlink" title="定理"></a>定理</h3><script type="math/tex; mode=display">\large (\frac{a}{b}) \bmod p</script><script type="math/tex; mode=display">\large =(a\times a\text{的逆元}) \bmod p</script><h3 id="求乘法逆元"><a href="#求乘法逆元" class="headerlink" title="求乘法逆元"></a>求乘法逆元</h3><h4 id="欧几里得（拓展）"><a href="#欧几里得（拓展）" class="headerlink" title="欧几里得（拓展）"></a>欧几里得（拓展）</h4><p>可以将上面的同余方程化为</p>
+<script type="math/tex; mode=display">\large ax=1-by</script><script type="math/tex; mode=display">\large ax+by=1</script><h4 id="快速幂"><a href="#快速幂" class="headerlink" title="快速幂"></a>快速幂</h4><p>这里需要用到<strong>费马小定理</strong></p>
 <blockquote>
 <p>若 $a$ 为正整数，$b$ 为素数，$a,b$ 互质，则有</p>
 <script type="math/tex; mode=display">\large a^{b-1} \equiv 1 \pmod b</script></blockquote>
 <p>把这个式子代入 $ax \equiv 1 \pmod b$ 中，得</p>
 <script type="math/tex; mode=display">\large ax \equiv a^{b-1} \pmod b</script><script type="math/tex; mode=display">\large x \equiv a^{b-2} \pmod b</script><p>所以这时候方程的解就是 $a^{b-2} \bmod b$</p>
 <hr>
-<h1 id="欧几里得（拓展）-1"><a href="#欧几里得（拓展）-1" class="headerlink" title="欧几里得（拓展）"></a>欧几里得（拓展）</h1><h2 id="解决的问题-1"><a href="#解决的问题-1" class="headerlink" title="解决的问题"></a>解决的问题</h2><p>求下面关于 $x,y$ 的不定方程的整数解</p>
-<script type="math/tex; mode=display">\large{ax+by=c}</script><h2 id="定理-2"><a href="#定理-2" class="headerlink" title="定理"></a>定理</h2><p>若不定方程有整数解，则</p>
+<h2 id="欧几里得（拓展）-1"><a href="#欧几里得（拓展）-1" class="headerlink" title="欧几里得（拓展）"></a>欧几里得（拓展）</h2><h3 id="解决的问题-1"><a href="#解决的问题-1" class="headerlink" title="解决的问题"></a>解决的问题</h3><p>求下面关于 $x,y$ 的不定方程的整数解</p>
+<script type="math/tex; mode=display">\large{ax+by=c}</script><h3 id="定理-2"><a href="#定理-2" class="headerlink" title="定理"></a>定理</h3><p>若不定方程有整数解，则</p>
 <script type="math/tex; mode=display">\large{\gcd(a,b)|c}</script><p>若关于这个不定方程的一组解为 $x_{0},y_{0}$， 则这个不定方程的特殊解为</p>
 <script type="math/tex; mode=display">\large{x_{special}=\frac{x_{0}\times c}{\gcd(a,b)}}</script><p>最小解为</p>
 <script type="math/tex; mode=display">\large{\text{令 } t=\frac{b}{\gcd(a,b)}}</script><script type="math/tex; mode=display">\large{\text{则 }x_{min}=(x_{special} \bmod t+t) \bmod t}</script><hr>
-<h1 id="中国剩余定理"><a href="#中国剩余定理" class="headerlink" title="中国剩余定理"></a>中国剩余定理</h1><h2 id="解决的问题-2"><a href="#解决的问题-2" class="headerlink" title="解决的问题"></a>解决的问题</h2><p>已知关于 $x$ 的同余方程组</p>
+<h2 id="中国剩余定理"><a href="#中国剩余定理" class="headerlink" title="中国剩余定理"></a>中国剩余定理</h2><h3 id="解决的问题-2"><a href="#解决的问题-2" class="headerlink" title="解决的问题"></a>解决的问题</h3><p>已知关于 $x$ 的同余方程组</p>
 <script type="math/tex; mode=display">\large\begin{cases}
 x \equiv b_{1} \pmod{m_{1}}\\
 x \equiv b_{2} \pmod{m_{2}}\\
@@ -351,8 +334,8 @@ x \equiv b_{2} \pmod{m_{2}}\\
 x \equiv b_{n} \pmod{m_{n}}\\
 \end{cases}</script><p>并且</p>
 <script type="math/tex; mode=display">\large \gcd(m_{1},m_{}2,\cdots,m_{n})=1</script><p>求整数解 $x$ </p>
-<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><hr>
-<h1 id="中国剩余定理（拓展）"><a href="#中国剩余定理（拓展）" class="headerlink" title="中国剩余定理（拓展）"></a>中国剩余定理（拓展）</h1><h2 id="解决的问题-3"><a href="#解决的问题-3" class="headerlink" title="解决的问题"></a>解决的问题</h2><p>已知关于 $x$ 的同余方程组</p>
+<h3 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h3><hr>
+<h2 id="中国剩余定理（拓展）"><a href="#中国剩余定理（拓展）" class="headerlink" title="中国剩余定理（拓展）"></a>中国剩余定理（拓展）</h2><h3 id="解决的问题-3"><a href="#解决的问题-3" class="headerlink" title="解决的问题"></a>解决的问题</h3><p>已知关于 $x$ 的同余方程组</p>
 <script type="math/tex; mode=display">\large\begin{cases}
 x \equiv b_{1} \pmod{m_{1}}\\
 x \equiv b_{2} \pmod{m_{2}}\\
@@ -360,7 +343,7 @@ x \equiv b_{2} \pmod{m_{2}}\\
 x \equiv b_{n} \pmod{m_{n}}\\
 \end{cases}</script><p>并且</p>
 <script type="math/tex; mode=display">\large \gcd(m_{1},m_{}2,\cdots,m_{n})>1</script><p>求整数解 $x$ </p>
-<h2 id="过程-1"><a href="#过程-1" class="headerlink" title="过程"></a>过程</h2><p>先看两个方程</p>
+<h3 id="过程-1"><a href="#过程-1" class="headerlink" title="过程"></a>过程</h3><p>先看两个方程</p>
 <script type="math/tex; mode=display">\large\begin{cases}
 x \equiv b_{1} \pmod{m_{1}}\\
 x \equiv b_{2} \pmod{m_{2}}\\
@@ -406,16 +389,16 @@ x=m_{2}\times x_{2}+b_{2}\\
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/Thematic001/" rel="next" title="Thematic001. 数论专题">
-                  <i class="fa fa-chevron-left"></i> Thematic001. 数论专题
+                <a href="/Thematic001/" rel="next" title="数论">
+                  <i class="fa fa-chevron-left"></i> 数论
                 </a>
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/Thematic002/" rel="prev" title="Thematic002.字符串专题">
-                  Thematic002.字符串专题 <i class="fa fa-chevron-right"></i>
+                <a href="/Thematic002/" rel="prev" title="字符串">
+                  字符串 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -456,7 +439,7 @@ x=m_{2}\times x_{2}+b_{2}\\
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Prove001"><span class="nav-number">1.</span> <span class="nav-text">Prove001</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#目录"><span class="nav-number">2.</span> <span class="nav-text">目录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分解质因数"><span class="nav-number">3.</span> <span class="nav-text">分解质因数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#欧拉函数"><span class="nav-number">4.</span> <span class="nav-text">欧拉函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义"><span class="nav-number">4.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#求-varphi-n"><span class="nav-number">4.2.</span> <span class="nav-text">求 $\varphi(n)$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#性质"><span class="nav-number">4.3.</span> <span class="nav-text">性质</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#varphi-1-varphi-2-1-，其余的欧拉函数均为偶数"><span class="nav-number">4.3.1.</span> <span class="nav-text">$\varphi(1)=\varphi(2)=1$，其余的欧拉函数均为偶数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#当-n-为素数时，-varphi-n-n-1"><span class="nav-number">4.3.2.</span> <span class="nav-text">当 $n$ 为素数时，$\varphi(n)=n-1$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#欧拉函数是积性函数，但不是完全积性。"><span class="nav-number">4.3.3.</span> <span class="nav-text">欧拉函数是积性函数，但不是完全积性。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#当-n-为奇数时，-varphi-2n-varphi-n"><span class="nav-number">4.3.4.</span> <span class="nav-text">当 $n$ 为奇数时，$\varphi(2n)=\varphi(n)$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#当-n-为素数时，-varphi-n-k-n-1-times-n-k-1"><span class="nav-number">4.3.5.</span> <span class="nav-text">当 $n$ 为素数时，$\varphi(n^{k})=(n-1)\times n^{k-1}$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#当-n-geq-1-时，-1-到-n-中所有与-n-互质的数的和为-frac-varphi-n-2-times-n"><span class="nav-number">4.3.6.</span> <span class="nav-text">当 $n \geq 1$ 时，$1$ 到 $n$ 中所有与 $n$ 互质的数的和为 $\frac{\varphi(n)}{2}\times n$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如果-k-bmod-p-0-且-p-为素数，那么-varphi-kp-varphi-k-times-p"><span class="nav-number">4.3.7.</span> <span class="nav-text">如果 $k \bmod p = 0$ 且 $p$ 为素数，那么 $\varphi(kp)=\varphi(k)\times p$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如果-k-bmod-p-neq-0-且-p-为素数，那么-varphi-kp-varphi-k-times-p-1"><span class="nav-number">4.3.8.</span> <span class="nav-text">如果 $k \bmod p \neq 0$ 且 $p$ 为素数，那么 $\varphi(kp)=\varphi(k)\times (p-1)$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如果-gcd-a-p-1-，那么-a-varphi-p-equiv-1-pmod-p"><span class="nav-number">4.3.9.</span> <span class="nav-text">如果 $\gcd(a,p)=1$ ，那么 $a^{\varphi(p)}\equiv 1 \pmod p$</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#约数"><span class="nav-number">5.</span> <span class="nav-text">约数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#求-n-的正约数个数"><span class="nav-number">5.1.</span> <span class="nav-text">求 $n$ 的正约数个数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#求-n-所有正约数的和"><span class="nav-number">5.2.</span> <span class="nav-text">求 $n$ 所有正约数的和</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#最大公约数-amp-最小公倍数"><span class="nav-number">6.</span> <span class="nav-text">最大公约数 &amp; 最小公倍数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定理"><span class="nav-number">6.1.</span> <span class="nav-text">定理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#求最大公倍数"><span class="nav-number">6.2.</span> <span class="nav-text">求最大公倍数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#更相减损术"><span class="nav-number">6.2.1.</span> <span class="nav-text">更相减损术</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#欧几里得（-text-辗转相除法-text-）"><span class="nav-number">6.2.2.</span> <span class="nav-text">欧几里得（$\text{ }$辗转相除法$\text{ }$）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二进制算法"><span class="nav-number">6.2.3.</span> <span class="nav-text">二进制算法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#乘法逆元"><span class="nav-number">7.</span> <span class="nav-text">乘法逆元</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解决的问题"><span class="nav-number">7.1.</span> <span class="nav-text">解决的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定理-1"><span class="nav-number">7.2.</span> <span class="nav-text">定理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#求乘法逆元"><span class="nav-number">7.3.</span> <span class="nav-text">求乘法逆元</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#欧几里得（拓展）"><span class="nav-number">7.3.1.</span> <span class="nav-text">欧几里得（拓展）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快速幂"><span class="nav-number">7.3.2.</span> <span class="nav-text">快速幂</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#欧几里得（拓展）-1"><span class="nav-number">8.</span> <span class="nav-text">欧几里得（拓展）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解决的问题-1"><span class="nav-number">8.1.</span> <span class="nav-text">解决的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定理-2"><span class="nav-number">8.2.</span> <span class="nav-text">定理</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#中国剩余定理"><span class="nav-number">9.</span> <span class="nav-text">中国剩余定理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解决的问题-2"><span class="nav-number">9.1.</span> <span class="nav-text">解决的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#过程"><span class="nav-number">9.2.</span> <span class="nav-text">过程</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#中国剩余定理（拓展）"><span class="nav-number">10.</span> <span class="nav-text">中国剩余定理（拓展）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#解决的问题-3"><span class="nav-number">10.1.</span> <span class="nav-text">解决的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#过程-1"><span class="nav-number">10.2.</span> <span class="nav-text">过程</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#目录"><span class="nav-number">1.</span> <span class="nav-text">目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分解质因数"><span class="nav-number">2.</span> <span class="nav-text">分解质因数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#欧拉函数"><span class="nav-number">3.</span> <span class="nav-text">欧拉函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#定义"><span class="nav-number">3.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#求-varphi-n"><span class="nav-number">3.2.</span> <span class="nav-text">求 $\varphi(n)$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#性质"><span class="nav-number">3.3.</span> <span class="nav-text">性质</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#约数"><span class="nav-number">4.</span> <span class="nav-text">约数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#求-n-的正约数个数"><span class="nav-number">4.1.</span> <span class="nav-text">求 $n$ 的正约数个数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#求-n-所有正约数的和"><span class="nav-number">4.2.</span> <span class="nav-text">求 $n$ 所有正约数的和</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最大公约数-amp-最小公倍数"><span class="nav-number">5.</span> <span class="nav-text">最大公约数 &amp; 最小公倍数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#定理"><span class="nav-number">5.1.</span> <span class="nav-text">定理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#求最大公倍数"><span class="nav-number">5.2.</span> <span class="nav-text">求最大公倍数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#乘法逆元"><span class="nav-number">6.</span> <span class="nav-text">乘法逆元</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解决的问题"><span class="nav-number">6.1.</span> <span class="nav-text">解决的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定理-1"><span class="nav-number">6.2.</span> <span class="nav-text">定理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#求乘法逆元"><span class="nav-number">6.3.</span> <span class="nav-text">求乘法逆元</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#欧几里得（拓展）"><span class="nav-number">6.3.1.</span> <span class="nav-text">欧几里得（拓展）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#快速幂"><span class="nav-number">6.3.2.</span> <span class="nav-text">快速幂</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#欧几里得（拓展）-1"><span class="nav-number">7.</span> <span class="nav-text">欧几里得（拓展）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解决的问题-1"><span class="nav-number">7.1.</span> <span class="nav-text">解决的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定理-2"><span class="nav-number">7.2.</span> <span class="nav-text">定理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中国剩余定理"><span class="nav-number">8.</span> <span class="nav-text">中国剩余定理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解决的问题-2"><span class="nav-number">8.1.</span> <span class="nav-text">解决的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#过程"><span class="nav-number">8.2.</span> <span class="nav-text">过程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#中国剩余定理（拓展）"><span class="nav-number">9.</span> <span class="nav-text">中国剩余定理（拓展）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解决的问题-3"><span class="nav-number">9.1.</span> <span class="nav-text">解决的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#过程-1"><span class="nav-number">9.2.</span> <span class="nav-text">过程</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -478,7 +461,7 @@ x=m_{2}\times x_{2}+b_{2}\\
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
   </nav>
@@ -488,7 +471,7 @@ x=m_{2}\times x_{2}+b_{2}\\
         <a href="https://github.com/666DHG" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;666DHG" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:1265448316@qq.com" title="E-Mail &amp;rarr; mailto:1265448316@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:paradoxyz@qq.com" title="E-Mail &amp;rarr; mailto:paradoxyz@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
       </span>
       <span class="links-of-author-item">
         <a href="https://plus.google.com/666DHG" title="Google &amp;rarr; https:&#x2F;&#x2F;plus.google.com&#x2F;666DHG" rel="noopener" target="_blank"><i class="fa fa-fw fa-google"></i>Google</a>
@@ -510,6 +493,9 @@ x=m_{2}\times x_{2}+b_{2}\\
         </li>
         <li class="links-of-blogroll-item">
           <a href="https://syzoj.com/" title="https:&#x2F;&#x2F;syzoj.com&#x2F;" rel="noopener" target="_blank">SYZOJ</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://loj.ac/" title="https:&#x2F;&#x2F;loj.ac&#x2F;" rel="noopener" target="_blank">LibreOJ</a>
         </li>
     </ul>
   </div>
