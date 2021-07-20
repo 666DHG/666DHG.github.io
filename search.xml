@@ -1,6 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Dynamix 成绩汇总</title>
+    <url>/Game002/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><center> Game002 </center>
+
+<a id="more"></a>
+<h2 id="Rank曲"><a href="#Rank曲" class="headerlink" title="Rank曲"></a>Rank曲</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Name</th>
+<th style="text-align:center">HARD</th>
+<th style="text-align:center">MEGA</th>
+<th style="text-align:center">GIGA</th>
+<th style="text-align:center">CLEAR?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Stardust</td>
+<td style="text-align:center">Ω</td>
+<td style="text-align:center">未拥有</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">春菊</td>
+<td style="text-align:center">19 - 2</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">未拥有</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Actinium</td>
+<td style="text-align:center">72 - 12</td>
+<td style="text-align:center">未拥有</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Reborn</td>
+<td style="text-align:center">11 - 7</td>
+<td style="text-align:center">34 - 2</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">名無しの宣教師</td>
+<td style="text-align:center">9 - 2</td>
+<td style="text-align:center">13 - 3</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">香港ノ奇術師</td>
+<td style="text-align:center">42 - 10</td>
+<td style="text-align:center">43 - 9</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Impromptu D899#3-Y</td>
+<td style="text-align:center">52 - 17</td>
+<td style="text-align:center">41 - 16</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Outer Space</td>
+<td style="text-align:center">105 - 30</td>
+<td style="text-align:center">32 - 6</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">パントマイム Feat.IA</td>
+<td style="text-align:center">未玩</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Moonlight of Sand Castle</td>
+<td style="text-align:center">78 - 33</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Rave-olution</td>
+<td style="text-align:center">Ω</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Phoebe</td>
+<td style="text-align:center">20 - 2</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Leviticus</td>
+<td style="text-align:center">11 - 2</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">青坊</td>
+<td style="text-align:center">20 - 4</td>
+<td style="text-align:center">48 - 20</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Vengeance</td>
+<td style="text-align:center">89 - 44</td>
+<td style="text-align:center">110 - 17</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Forget Me Not</td>
+<td style="text-align:center">未玩</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Little Boy</td>
+<td style="text-align:center">27 - 5</td>
+<td style="text-align:center">21 - 5</td>
+<td style="text-align:center">未拥有</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Lotus</td>
+<td style="text-align:center">未玩</td>
+<td style="text-align:center">38 - 6</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Perspicuus_Aestus</td>
+<td style="text-align:center">2 - 0</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">评分过低</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Midnight Party</td>
+<td style="text-align:center">7 - 0</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Axis</td>
+<td style="text-align:center">14 - 8</td>
+<td style="text-align:center">14 - 5</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Wonderful Days</td>
+<td style="text-align:center">41 - 3</td>
+<td style="text-align:center">94 - 5</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">萤火虫の怨</td>
+<td style="text-align:center">未玩</td>
+<td style="text-align:center">12 - 0</td>
+<td style="text-align:center">未拥有</td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+</div>
+]]></content>
+      <categories>
+        <category>Game</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Dynamix/Dynamite 练习随记</title>
+    <url>/Game001/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><center> Game001 </center>
+
+<a id="more"></a>
+<h2 id="叠键"><a href="#叠键" class="headerlink" title="叠键"></a>叠键</h2><p>【Dynamix】 Cross Time HARD10</p>
+]]></content>
+      <categories>
+        <category>Game</category>
+      </categories>
+  </entry>
+  <entry>
     <title>树</title>
     <url>/Thematic004/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><center> Thematic004 </center>
@@ -74,15 +273,14 @@
   <entry>
     <title>Hexo NexT 插件 - APlayer</title>
     <url>/Toolbox002/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
-<p>Such a beautiful HTML5 music player.</p>
-</blockquote>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><center> ToolBox002 </center>
+
 <a id="more"></a>
 <h2 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h2>
-        <div id="aplayer-RNZEfkyB" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
+        <div id="aplayer-mKiBvPrP" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
 			  <script>
 				  var options = {"narrow":false,"autoplay":false,"showlrc":0,"mini":false,"theme":"#8b4513","mutex":true,"music":[{"title":"Dream goes on","author":"Tiny Minim","url":"https://666dhg.github.io/data/Playlist/DGO.mp3","pic":"https://666dhg.github.io/data/Playlist/DGO.jpg"},{"title":"Frey's Philosophy","author":"Powerless","url":"https://666dhg.github.io/data/Playlist/FP.mp3","pic":"https://666dhg.github.io/data/Playlist/FP.jpg"},{"title":"Cyanine","author":"jioyi","url":"https://666dhg.github.io/data/Playlist/Cyanine.mp3","pic":"https://666dhg.github.io/data/Playlist/Cyanine.jpg"}]};
-				  options.element = document.getElementById("aplayer-RNZEfkyB");
+				  options.element = document.getElementById("aplayer-mKiBvPrP");
 				  var ap = new APlayer(options);
 			    window.aplayers || (window.aplayers = []);
 				  window.aplayers.push(ap);
@@ -103,9 +301,8 @@
   <entry>
     <title>Hexo NexT 插件 - 心知天气</title>
     <url>/Toolbox001/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
-<p>记得带伞</p>
-</blockquote>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><center> ToolBox001 </center>
+
 <a id="more"></a>
 <h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><h3 id="注册账号"><a href="#注册账号" class="headerlink" title="注册账号"></a>注册账号</h3><p>到<a href="https://www.seniverse.com/" target="_blank" rel="noopener">官网</a>注册账号</p>
 <p>接着在<a href="https://www.seniverse.com/products?iid=new" target="_blank" rel="noopener">这里</a>申请<strong>免费版产品</strong></p>
