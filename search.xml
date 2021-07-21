@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Mini Motorways 迷你公路 - 初体验</title>
+    <url>/Game003/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><center> Game003 </center>
+
+<a id="more"></a>
+<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a><strong>写在前面</strong></h2><p>考完试后，偶然刷 Steam 时发现 Mini Motorways 居然有具体发售日期了，便开始蹲点。玩上后，这的确没有让我失望</p>
+<h2 id="亮点"><a href="#亮点" class="headerlink" title="亮点"></a><strong>亮点</strong></h2><h3 id="BGM"><a href="#BGM" class="headerlink" title="BGM"></a>BGM</h3><p>BGM 延续了 Mini Metro 的特色，每一种颜色的车辆到达目的地时、回到车库时的音效都不同、都只是一个音符。但游玩到后期，就是一首由许多音符组成的乐曲（强烈建议戴耳机）</p>
+<h3 id="画面"><a href="#画面" class="headerlink" title="画面"></a>画面</h3><p>相比于 Mini Metro 的简约画面（只有陆地与河流），Mini Motorways 的画面更为精美，不局限于平面</p>
+<p><img src="https://666DHG.github.io/data/Game003/1.png" alt=""></p>
+<p><img src="https://666DHG.github.io/data/Game003/2.png" alt=""></p>
+<p><img src="https://666DHG.github.io/data/Game003/3.png" alt=""></p>
+<p>以及三种地图配色模式（专属配色、黑夜、地图）</p>
+<p><img src="https://666DHG.github.io/data/Game003/4.png" alt=""></p>
+<h3 id="新玩法"><a href="#新玩法" class="headerlink" title="新玩法"></a>新玩法</h3><p>与 Mini Metro 的重心不同，Mini Motorways 需要你规划好适合的出发点，以及避免堵塞</p>
+<p>（也就是看上去比 Mini Metro 混乱的原因，不过也能接受</p>
+<h3 id="新物件，新机制"><a href="#新物件，新机制" class="headerlink" title="新物件，新机制"></a>新物件，新机制</h3><p>基于更丰富的画面，就有了……</p>
+<p><strong>高速公路</strong>：连接任意道路两点，车辆直达且车速加快，但无法跨越山脉（简称开挂</p>
+<p><strong>环岛、交通灯</strong>：使交通更有序（有时候有用，需求不大，可以不拿</p>
+<p><strong>隧道</strong>：跨越<strong>山脉</strong></p>
+<p>可以<strong>砍树</strong>！</p>
+<p><img src="https://666DHG.github.io/data/Game003/5.gif" alt=""></p>
+<p>以及各种奇奇怪怪的机制</p>
+<p><img src="https://666DHG.github.io/data/Game003/6.png" alt=""></p>
+<p>比如说这周地图的机制是无限桥梁、每周补给是抽奖、不可以砍树 <del>绿色鉴血统游戏</del></p>
+<p><img src="https://666DHG.github.io/data/Game003/7.png" alt=""></p>
+<h3 id="细节"><a href="#细节" class="headerlink" title="细节"></a>细节</h3><p>每张地图都有自己独特的配色方案（背景与建筑）</p>
+<p>（上面第二张图应该能猜到是哪里吧</p>
+<p>河流名都是使用当地的语言（无论选择何种游戏语言）</p>
+<p>由于目前还未玩到后面的地图，暂不确定是否有对应地图的特色机制或物件</p>
+<blockquote>
+<p>就比如 Mini Metro 中大阪的新干线、首尔的快速上下车等特色机制与物件</p>
+</blockquote>
+<p>据说有特色刷点，几乎是按照当地的居住区与商业区的分布刷点的</p>
+<p>细节总体上没有 Mini Metro 丰富</p>
+<h2 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a><strong>尾声</strong></h2><p>官方在公告中提到，Mini Motorways 只会在 Apple Arcade，Steam 以及 NS 上发布。鉴于其不像 Mini Metro 的移动端买断制，建议大家都来玩啊！</p>
+]]></content>
+      <categories>
+        <category>Game</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Dynamix 成绩汇总</title>
     <url>/Game002/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><center> Game002 </center>
@@ -15,6 +56,7 @@
 <th style="text-align:center">MEGA</th>
 <th style="text-align:center">GIGA</th>
 <th style="text-align:center">CLEAR?</th>
+<th style="text-align:center">Note</th>
 </tr>
 </thead>
 <tbody>
@@ -24,6 +66,7 @@
 <td style="text-align:center">未拥有</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
 <td style="text-align:center">春菊</td>
@@ -31,19 +74,22 @@
 <td style="text-align:center">-</td>
 <td style="text-align:center">未拥有</td>
 <td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
 <td style="text-align:center">Actinium</td>
-<td style="text-align:center">72 - 12</td>
+<td style="text-align:center">27 - 4</td>
 <td style="text-align:center">未拥有</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center"></td>
+<td style="text-align:center">设备问题</td>
 </tr>
 <tr>
 <td style="text-align:center">Reborn</td>
 <td style="text-align:center">11 - 7</td>
 <td style="text-align:center">34 - 2</td>
 <td style="text-align:center">-</td>
+<td style="text-align:center"></td>
 <td style="text-align:center"></td>
 </tr>
 <tr>
@@ -52,26 +98,30 @@
 <td style="text-align:center">13 - 3</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
 <td style="text-align:center">香港ノ奇術師</td>
-<td style="text-align:center">42 - 10</td>
+<td style="text-align:center">10 - 1</td>
 <td style="text-align:center">43 - 9</td>
 <td style="text-align:center">-</td>
+<td style="text-align:center"></td>
 <td style="text-align:center"></td>
 </tr>
 <tr>
 <td style="text-align:center">Impromptu D899#3-Y</td>
-<td style="text-align:center">52 - 17</td>
+<td style="text-align:center">10 - 7</td>
 <td style="text-align:center">41 - 16</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center"></td>
+<td style="text-align:center">设备问题</td>
 </tr>
 <tr>
 <td style="text-align:center">Outer Space</td>
-<td style="text-align:center">105 - 30</td>
+<td style="text-align:center">10 - 4</td>
 <td style="text-align:center">32 - 6</td>
 <td style="text-align:center">-</td>
+<td style="text-align:center"></td>
 <td style="text-align:center"></td>
 </tr>
 <tr>
@@ -80,12 +130,14 @@
 <td style="text-align:center">-</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
 <td style="text-align:center">Moonlight of Sand Castle</td>
-<td style="text-align:center">78 - 33</td>
+<td style="text-align:center">4 - 0</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center">-</td>
+<td style="text-align:center"></td>
 <td style="text-align:center"></td>
 </tr>
 <tr>
@@ -94,12 +146,14 @@
 <td style="text-align:center">-</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
 <td style="text-align:center">Phoebe</td>
 <td style="text-align:center">20 - 2</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center">-</td>
+<td style="text-align:center"></td>
 <td style="text-align:center"></td>
 </tr>
 <tr>
@@ -108,6 +162,7 @@
 <td style="text-align:center">-</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
 <td style="text-align:center">青坊</td>
@@ -115,12 +170,14 @@
 <td style="text-align:center">48 - 20</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
 <td style="text-align:center">Vengeance</td>
-<td style="text-align:center">89 - 44</td>
+<td style="text-align:center">11 - 2</td>
 <td style="text-align:center">110 - 17</td>
 <td style="text-align:center">-</td>
+<td style="text-align:center"></td>
 <td style="text-align:center"></td>
 </tr>
 <tr>
@@ -129,12 +186,14 @@
 <td style="text-align:center">-</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
 <td style="text-align:center">Little Boy</td>
 <td style="text-align:center">27 - 5</td>
 <td style="text-align:center">21 - 5</td>
 <td style="text-align:center">未拥有</td>
+<td style="text-align:center"></td>
 <td style="text-align:center"></td>
 </tr>
 <tr>
@@ -143,12 +202,14 @@
 <td style="text-align:center">38 - 6</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
 <td style="text-align:center">Perspicuus_Aestus</td>
 <td style="text-align:center">2 - 0</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center">评分过低</td>
+<td style="text-align:center"></td>
 <td style="text-align:center"></td>
 </tr>
 <tr>
@@ -157,12 +218,14 @@
 <td style="text-align:center">-</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
 <td style="text-align:center">Axis</td>
 <td style="text-align:center">14 - 8</td>
 <td style="text-align:center">14 - 5</td>
 <td style="text-align:center">-</td>
+<td style="text-align:center"></td>
 <td style="text-align:center"></td>
 </tr>
 <tr>
@@ -171,12 +234,214 @@
 <td style="text-align:center">94 - 5</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
 <tr>
 <td style="text-align:center">萤火虫の怨</td>
 <td style="text-align:center">未玩</td>
 <td style="text-align:center">12 - 0</td>
 <td style="text-align:center">未拥有</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Desert Rose</td>
+<td style="text-align:center">43 - 9</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Decomposition</td>
+<td style="text-align:center">34 - 0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">未拥有</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">流れ星に願うよいま…</td>
+<td style="text-align:center">37 - 14</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Grape Jelly</td>
+<td style="text-align:center">14 - 2</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Aegis</td>
+<td style="text-align:center">18 - 7</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Forsaken</td>
+<td style="text-align:center">9 - 0</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Fierce Heart</td>
+<td style="text-align:center">19 - 1</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Goldelius</td>
+<td style="text-align:center">未玩</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">未拥有</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Keep Out</td>
+<td style="text-align:center">8 - 2</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Caelus</td>
+<td style="text-align:center">未玩</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Gallium Arsenide</td>
+<td style="text-align:center">123 - 36</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">设备问题</td>
+</tr>
+<tr>
+<td style="text-align:center">Gallium Phosphide</td>
+<td style="text-align:center">14 - 4</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Gallium Nitride</td>
+<td style="text-align:center">63 - 25</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Elph’s Sadness -DNX Edit-</td>
+<td style="text-align:center">21 - 0</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Ashes</td>
+<td style="text-align:center">11 - 3</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Lunar Arrow</td>
+<td style="text-align:center">31 - 2</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Oracle</td>
+<td style="text-align:center">24 - 7</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">评分过低</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Another World</td>
+<td style="text-align:center">14 - 2</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Hatsukoi Memories</td>
+<td style="text-align:center">64 - 16</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Set Free -KIVΛ Edition-</td>
+<td style="text-align:center">17 - 0</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">WILL</td>
+<td style="text-align:center">12 - 1 镜像 30 - 1</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Creater S</td>
+<td style="text-align:center">18 - 0</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Invaded</td>
+<td style="text-align:center">58 - 20</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Sandwich</td>
+<td style="text-align:center">40 - 9</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">Hemisphere</td>
+<td style="text-align:center">31 - 4</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">-</td>
+<td style="text-align:center"></td>
 <td style="text-align:center"></td>
 </tr>
 </tbody>
@@ -194,6 +459,9 @@
 
 <a id="more"></a>
 <h2 id="叠键"><a href="#叠键" class="headerlink" title="叠键"></a>叠键</h2><p>【Dynamix】 Cross Time HARD10</p>
+<h2 id="纵连"><a href="#纵连" class="headerlink" title="纵连"></a>纵连</h2><p>【Dynamix】 Actinium HARD10</p>
+<h2 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h2><p>【Dynamix】 Oracle HARD11</p>
+<p>【Dynamix】 WILL HARD10</p>
 ]]></content>
       <categories>
         <category>Game</category>
@@ -277,10 +545,10 @@
 
 <a id="more"></a>
 <h2 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h2>
-        <div id="aplayer-mKiBvPrP" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
+        <div id="aplayer-kfxxGdry" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;"></div>
 			  <script>
 				  var options = {"narrow":false,"autoplay":false,"showlrc":0,"mini":false,"theme":"#8b4513","mutex":true,"music":[{"title":"Dream goes on","author":"Tiny Minim","url":"https://666dhg.github.io/data/Playlist/DGO.mp3","pic":"https://666dhg.github.io/data/Playlist/DGO.jpg"},{"title":"Frey's Philosophy","author":"Powerless","url":"https://666dhg.github.io/data/Playlist/FP.mp3","pic":"https://666dhg.github.io/data/Playlist/FP.jpg"},{"title":"Cyanine","author":"jioyi","url":"https://666dhg.github.io/data/Playlist/Cyanine.mp3","pic":"https://666dhg.github.io/data/Playlist/Cyanine.jpg"}]};
-				  options.element = document.getElementById("aplayer-mKiBvPrP");
+				  options.element = document.getElementById("aplayer-kfxxGdry");
 				  var ap = new APlayer(options);
 			    window.aplayers || (window.aplayers = []);
 				  window.aplayers.push(ap);
